@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="menu_setup">Setup</string>
+    <string name="menu_companies">Companies</string>
+    <string name="menu_players">Players</string>
+    <string name="menu_score_sheet">Score sheet</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Setup"
+        android:id="@+id/setup"
+        android:icon="@drawable/ic_baseline_setup_24"/>
+    <item android:title="Companies"
+        android:id="@+id/companies"
+        android:icon="@drawable/ic_baseline_companies_24"/>
+    <item android:title="Players"
+        android:id="@+id/players"
+        android:icon="@drawable/ic_baseline_players_24"/>
+    <item android:title="Spreadsheet"
+        android:id="@+id/spreadsheet"
+        android:icon="@drawable/ic_baseline_spreadsheet_24"/>
+</menu>
