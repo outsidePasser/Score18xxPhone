@@ -1,0 +1,54 @@
+[
+  {
+    "title": "1822CA",
+    "fullName": "1822CA",
+    "companies": [
+      {
+        "name": "CNoR",
+        "color": "#9fce63",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CPR",
+        "color": "#ed242a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GNWR",
+        "color": "#8dd8f8",
+        "textColor": "#000000"
+      }
+    ],
+    "stockPrices": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "title": "1830",
+    "fullName": "1830: Railways & Robber Barons",
+    "companies": [
+      {
+        "name": "PRR",
+        "color": "#32763f",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NYC",
+        "color": "#474548",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CPR",
+        "color": "#d1232a",
+        "textColor": "#ffffff"
+      }
+    ],
+    "stockPrices": [
+      4,
+      5,
+      6
+    ]
+  }
+]

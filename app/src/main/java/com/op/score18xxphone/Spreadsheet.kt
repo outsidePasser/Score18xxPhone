@@ -13,7 +13,7 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Setup.newInstance] factory method to
+ * Use the [SetupFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
 class Spreadsheet : Fragment() {
@@ -49,7 +49,7 @@ class Spreadsheet : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Setup().apply {
+            SetupFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

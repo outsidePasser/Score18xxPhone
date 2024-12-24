@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/setupFragment">
+
+    <fragment
+        android:id="@+id/setupFragment"
+        android:name="com.op.score18xxphone.SetupFragment"
+        android:label="Account"
+        tools:layout="@layout/fragment_setup" />
+
+    <fragment
+        android:id="@+id/companiesFragment"
+        android:name="com.op.score18xxphone.Companies"
+        android:label="Account"
+        tools:layout="@layout/fragment_setup" />
+
+    <fragment
+        android:id="@+id/playersFragment"
+        android:name="com.op.score18xxphone.com.op.score18xxphone.com.op.score18xxphone.Players"
+        android:label="Account"
+        tools:layout="@layout/fragment_setup" />
+
+    <fragment
+        android:id="@+id/spreadsheetFragment"
+        android:name="com.op.score18xxphone.Spreadsheet"
+        android:label="Account"
+        tools:layout="@layout/fragment_setup" />
+</navigation>
