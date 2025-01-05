@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    tools:context=".Companies">
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:textColor="@color/white"
+    tools:context="com.op.score18xxphone.CompaniesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Companies Fragment"
-        android:textSize="26dp"
-        android:layout_gravity="center"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/company_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="65"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_player"
+        android:paddingTop="10sp"
+        />
 
-</FrameLayout>
+</LinearLayout>

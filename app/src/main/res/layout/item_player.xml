@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,7 +16,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        app:drawableLeftCompat="@drawable/ic_baseline_setup_24" />
+        android:text="Player"
+        android:paddingEnd="40dp"/>
 
 </FrameLayout>

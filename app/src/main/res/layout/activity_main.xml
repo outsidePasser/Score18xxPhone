@@ -25,6 +25,8 @@
         android:layout_weight="1"
         android:layout_gravity="bottom"
         android:background="@color/black"
+        app:itemTextColor="@color/bnv_tab_colors"
+        app:itemIconTint="@color/bnv_tab_colors"
         app:menu="@menu/menu_bottom_nav" />
 
 </LinearLayout>

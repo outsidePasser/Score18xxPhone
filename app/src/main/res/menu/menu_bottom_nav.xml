@@ -3,15 +3,15 @@
     <item
         android:id="@id/setupFragment"
         android:icon="@drawable/ic_baseline_setup_24"
-        android:title="Setup" />
+        android:title="@string/menu_setup" />
+
+    <item
+        android:id="@id/companiesFragment"
+        android:icon="@drawable/ic_baseline_companies_24"
+        android:title="@string/menu_companies" />
 
     <item
         android:id="@id/albumsFragment"
         android:icon="@drawable/ic_baseline_setup_24"
-        android:title="Albums" />
-
-    <item
-        android:id="@id/favouritesFragment"
-        android:icon="@drawable/ic_baseline_setup_24"
-        android:title="Favourites" />
+        android:title="@string/menu_players" />
 </menu>

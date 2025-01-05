@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 
-enum class ViewType {
+enum class PlayerViewType {
     PLAYER, ADD_BUTTON
 }
 
@@ -76,9 +76,9 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
 
     override fun getItemViewType(position: Int): Int {
         if (position < players.size) {
-            return ViewType.PLAYER.ordinal
+            return PlayerViewType.PLAYER.ordinal
         } else {
-            return ViewType.ADD_BUTTON.ordinal
+            return PlayerViewType.ADD_BUTTON.ordinal
         }
     }
 
@@ -86,7 +86,7 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
         parent: ViewGroup,
         viewType: Int
     ): ViewHolder {
-        if (viewType == ViewType.PLAYER.ordinal) {
+        if (viewType == PlayerViewType.PLAYER.ordinal) {
             return PlayerViewHolder(
                 LayoutInflater.from(parent.context).inflate(
                     R.layout.item_player, parent, false

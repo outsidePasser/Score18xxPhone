@@ -1,7 +1,7 @@
 package com.op.score18xxphone
 
+import android.app.Activity
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +25,6 @@ class SetupFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return binding.root
     }
 
@@ -36,8 +35,8 @@ class SetupFragment : Fragment() {
     }
 
     private fun setupSpinner() {
-        var gameData = (activity as MainActivity).getGameData()
-        var adapter = ArrayAdapter(requireContext(), R.layout.spinner_game_item, gameData.map { it.fullName } )
+        var games = Games.readGames(activity as Activity)
+        var adapter = ArrayAdapter(requireContext(), R.layout.spinner_game_item, games.map { it.fullName } )
         adapter.setDropDownViewResource(R.layout.spinner_game_dropdown_item)
 
         if (binding.game.adapter == null) {
@@ -51,8 +50,7 @@ class SetupFragment : Fragment() {
                 p2: Int,
                 p3: Long
             ) {
-                (activity as MainActivity).selectGameByIndex(p2)
-            }
+                Games.currentGameIndex = p2            }
 
             override fun onNothingSelected(p0: AdapterView<*>?) {
             }

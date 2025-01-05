@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/companiesFragment"
-        android:name="com.op.score18xxphone.Companies"
+        android:name="com.op.score18xxphone.CompaniesFragment"
         android:label="Account"
         tools:layout="@layout/fragment_setup" />
 
