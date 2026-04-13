@@ -16,7 +16,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:paddingStart="40dp"
-        android:text="Player"
+        android:text="@string/player"
         android:paddingEnd="40dp"/>
 
 </FrameLayout>

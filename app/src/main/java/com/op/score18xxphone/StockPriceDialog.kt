@@ -7,6 +7,8 @@ import androidx.appcompat.app.AlertDialog
 import com.op.score18xxphone.Games.currentGameIndex
 import com.op.score18xxphone.Games.games
 import android.graphics.Color
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
 
 class StockPriceDialog {
     private var popupDialog: AlertDialog
@@ -20,7 +22,7 @@ class StockPriceDialog {
         val game = games[currentGameIndex]
 
         companyNameView.text = company.name
-        companyNameView.setBackgroundColor(Color.parseColor(company.color))
+        companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
         companyNameView.setTextColor(Color.parseColor(company.textColor))
 
         for (i in 0..(game.stockPrices.size + 1) step 5) {

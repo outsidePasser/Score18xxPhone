@@ -3,215 +3,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/black">
+    android:background="@color/black"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40sp"
+        android:layout_height="48sp"
         android:orientation="horizontal"
-        >
+        tools:ignore="UselessParent">
 
         <TextView
             android:layout_width="0sp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
+            android:layout_weight="5"
             android:background="@color/black"
-            android:gravity="right"
+            android:gravity="end"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
+        <!-- TODO: Put more of this into style -->
         <TextView
-            android:id="@+id/stock_picker_company"
+            android:id="@+id/run_input_company"
+            style="@style/CompanyName"
             android:layout_width="0sp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:paddingLeft="5sp"
-            android:paddingRight="5sp"
-            android:background="@color/black"
-            android:gravity="center_vertical"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:maxLines="1"
-            android:autoSizeTextType="uniform"
-            />
+            android:layout_weight="4" />
 
         <TextView
+            android:id="@+id/run_input_run_number"
             android:layout_width="0sp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
+            android:layout_weight="9"
             android:background="@color/black"
             android:gravity="start|center_vertical"
-            android:text="Run"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="7"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="8"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="9"
+            android:text="@string/run"
             android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/run_display"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/rounded_corner_light_gray"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="60sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="4"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_7"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_7" />
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="5"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_8"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_8" />
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="6"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_9"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_9" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="60sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="1"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_4"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_4" />
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="2"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_5"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_5" />
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="3"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_6"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_6" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40sp"
-        android:orientation="horizontal"
-        >
+        android:layout_height="60sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="X"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_1"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_1" />
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="0"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_2"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_2" />
 
         <TextView
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:text="Ok"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:id="@+id/key_3"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/key_x"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/x" />
+
+        <TextView
+            android:id="@+id/key_0"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/_0" />
+
+        <TextView
+            android:id="@+id/key_ok"
+            style="@style/CompanyInput"
+            android:layout_height="60sp"
+            android:text="@string/confirm" />
     </LinearLayout>
 
 </LinearLayout>

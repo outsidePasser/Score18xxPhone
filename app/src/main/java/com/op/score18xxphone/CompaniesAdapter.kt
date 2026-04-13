@@ -6,7 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.util.Log
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.op.score18xxphone.Games.currentGameIndex
@@ -28,10 +31,11 @@ class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
         fun bind(index: Int) {
             var company = games[currentGameIndex].companies[index - 1]
 
-           // var companyNameView: TextView = itemView.findViewById(R.id.item_company_name)
-            //companyNameView.text = company.name
-            //companyNameView.setBackgroundColor(Color.parseColor(company.color))
-            //companyNameView.setTextColor(Color.parseColor(company.textColor))
+            var companyNameView: TextView = itemView.findViewById(R.id.item_company_name)
+            companyNameView.text = company.name
+            companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
+            companyNameView.setTextColor(Color.parseColor(company.textColor))
+            //companyNameView.clipToOutline = true
 
             var stockPriceView: TextView = itemView.findViewById(R.id.item_company_stock_price)
             stockPriceView.text = company.stockPrice.toString()

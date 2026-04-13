@@ -19,6 +19,6 @@
         android:textSize="20sp"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
-        android:text="Add Player"/>
+        android:text="@string/add_player"/>
 
 </FrameLayout>
