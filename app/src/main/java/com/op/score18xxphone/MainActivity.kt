@@ -1,20 +1,14 @@
 package com.op.score18xxphone
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import com.op.score18xxphone.Games
 import com.op.score18xxphone.databinding.ActivityMainBinding
-import java.lang.reflect.Type
-
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,10 +17,10 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.nav_host_fragment)
         val navView: BottomNavigationView = findViewById(R.id.bottom_nav_view)
         navView.setupWithNavController(navController)
-        //Games.readGameFile(this)
-        true
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Persistence.save()
     }
 }
-
-
-

@@ -1,16 +1,15 @@
 package com.op.score18xxphone
 
 import com.op.score18xxphone.Players.players
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-
 
 enum class PlayerViewType {
     PLAYER, ADD_BUTTON
@@ -18,9 +17,7 @@ enum class PlayerViewType {
 
 class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
 
-    class PlayerViewHolder(
-        itemView: View
-    ) : ViewHolder(itemView) {
+    class PlayerViewHolder(itemView: View) : ViewHolder(itemView) {
 
         private val playerView: TextView = itemView.findViewById(R.id.item_player_name)
         private var playerIndex: Int = 0
@@ -28,75 +25,56 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
         fun bind(index: Int) {
             playerIndex = index
             playerView.text = players[index].name
-            itemView.setOnClickListener { removePlayer(itemView) }
+            itemView.setOnClickListener { removePlayer() }
         }
 
-        private fun removePlayer(itemView: View) {
-            var alert = AlertDialog.Builder(itemView.context);
-
-            alert.setTitle("Remove " + players[playerIndex].name + "?");
-
-            alert.setPositiveButton("OK") { dialog, which ->
-                Players.removePlayerByIndex(playerIndex)
-            }
-
-            alert.setNegativeButton("Cancel") { dialog, which ->
-            }
-
-            alert.show();
+        private fun removePlayer() {
+            val alert = AlertDialog.Builder(itemView.context)
+            alert.setTitle(itemView.context.getString(R.string.remove_player_prompt, players[playerIndex].name))
+            alert.setPositiveButton(R.string.confirm) { _, _ -> Players.removePlayerByIndex(playerIndex) }
+            alert.setNegativeButton(R.string.cancel, null)
+            alert.show()
         }
     }
 
-    class AddButtonViewHolder(
-        itemView: View
-    ) : ViewHolder(itemView) {
+    class AddButtonViewHolder(itemView: View) : ViewHolder(itemView) {
         fun bind() {
-            itemView.setOnClickListener { addPlayer(itemView) }
+            itemView.setOnClickListener { addPlayer() }
         }
 
-        private fun addPlayer(itemView: View) {
-            var alert = AlertDialog.Builder(itemView.context);
+        private fun addPlayer() {
+            val alert = AlertDialog.Builder(itemView.context)
+            alert.setTitle(R.string.add_new_player)
 
-            alert.setTitle("Add New Player");
+            val input = EditText(itemView.context).apply {
+                inputType = android.text.InputType.TYPE_CLASS_TEXT or
+                        android.text.InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
+            }
+            alert.setView(input)
 
-            var input = EditText(itemView.context);
-            alert.setView(input);
-
-            alert.setPositiveButton("OK") { dialog, which ->
-                Log.i("MHA - add", input.text.toString())
+            alert.setPositiveButton(R.string.confirm) { _, _ ->
                 Players.addPlayerByName(input.text.toString())
             }
+            alert.setNegativeButton(R.string.cancel, null)
 
-            alert.setNegativeButton("Cancel") { dialog, which ->
-            }
-
-            alert.show();
+            val dialog = alert.show()
+            dialog.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
+            input.requestFocus()
         }
     }
 
     override fun getItemViewType(position: Int): Int {
-        if (position < players.size) {
-            return PlayerViewType.PLAYER.ordinal
-        } else {
-            return PlayerViewType.ADD_BUTTON.ordinal
-        }
+        return if (position < players.size) PlayerViewType.PLAYER.ordinal else PlayerViewType.ADD_BUTTON.ordinal
     }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): ViewHolder {
-        if (viewType == PlayerViewType.PLAYER.ordinal) {
-            return PlayerViewHolder(
-                LayoutInflater.from(parent.context).inflate(
-                    R.layout.item_player, parent, false
-                )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        return if (viewType == PlayerViewType.PLAYER.ordinal) {
+            PlayerViewHolder(
+                LayoutInflater.from(parent.context).inflate(R.layout.item_player, parent, false)
             )
         } else {
-            return AddButtonViewHolder(
-                LayoutInflater.from(parent.context).inflate(
-                    R.layout.item_add_player, parent, false
-                )
+            AddButtonViewHolder(
+                LayoutInflater.from(parent.context).inflate(R.layout.item_add_player, parent, false)
             )
         }
     }

@@ -1,5 +1,6 @@
 package com.op.score18xxphone
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -7,33 +8,51 @@ import androidx.appcompat.app.AlertDialog
 import com.op.score18xxphone.Games.currentGameIndex
 import com.op.score18xxphone.Games.games
 import android.graphics.Color
-import android.util.Log
 import androidx.core.content.ContextCompat.getString
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
 
-class RunInputDialog {
-    public var popupDialog: AlertDialog
+class RunInputDialog(context: Context, company: Company, runNumber: Int) {
+    val popupDialog: AlertDialog
+    private var currentInput: String = ""
+    private var clearOnNextPress: Boolean = false
+    private lateinit var runDisplay: TextView
 
-    constructor(parent: ViewGroup, company: Company, runNumber: Int) {
-        val builder = AlertDialog.Builder(parent.context)
-        var picker = LayoutInflater.from(parent.context).inflate(
-            R.layout.or_run_chooser, parent, false
+    init {
+        val builder = AlertDialog.Builder(context)
+        val picker = LayoutInflater.from(context).inflate(
+            R.layout.or_run_chooser, null, false
         ) as ViewGroup
 
-        var companyNameView: TextView = picker.findViewById(R.id.run_input_company)
+        val companyNameView: TextView = picker.findViewById(R.id.run_input_company)
         companyNameView.text = company.name
         companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
         companyNameView.setTextColor(Color.parseColor(company.textColor))
 
-        var runNumberView: TextView = picker.findViewById(R.id.run_input_run_number)
-        runNumberView.text = getString(parent.context, arrayOf(R.string.run_1, R.string.run_2, R.string.run_3)[runNumber])
+        val runNumberView: TextView = picker.findViewById(R.id.run_input_run_number)
+        runNumberView.text = getString(context, arrayOf(R.string.run_1, R.string.run_2, R.string.run_3)[runNumber])
+
+        runDisplay = picker.findViewById(R.id.run_display)
+        val existingValue = company.runs[runNumber]
+        if (existingValue != 0) {
+            currentInput = existingValue.toString()
+            runDisplay.text = currentInput
+            clearOnNextPress = true
+        }
 
         arrayOf(R.id.key_0, R.id.key_1, R.id.key_2, R.id.key_3, R.id.key_4, R.id.key_5, R.id.key_6, R.id.key_7, R.id.key_8, R.id.key_9).forEachIndexed { i, key ->
-            var view: TextView = picker.findViewById(key)
-            view.setOnClickListener {
-                numberPress(i)
+            picker.findViewById<TextView>(key).setOnClickListener { numberPress(i) }
+        }
+
+        picker.findViewById<TextView>(R.id.key_x).setOnClickListener {
+            if (currentInput.isNotEmpty()) {
+                currentInput = currentInput.dropLast(1)
+                runDisplay.text = currentInput
             }
+        }
+
+        picker.findViewById<TextView>(R.id.key_ok).setOnClickListener {
+            chooseRun(company, runNumber)
         }
 
         builder.setView(picker)
@@ -44,13 +63,26 @@ class RunInputDialog {
         popupDialog.show()
     }
 
-    fun chooseRun(company: Company, price: String) {
-        company.stockPrice = price.toInt()
+    private fun chooseRun(company: Company, runNumber: Int) {
+        val value = if (currentInput.isEmpty()) 0 else currentInput.toInt()
+        company.runs[runNumber] = value
+        company.runsExplicitlySet[runNumber] = true
+
+        if (runNumber == 0) {
+            if (!company.runsExplicitlySet[1]) company.runs[1] = value
+            if (!company.runsExplicitlySet[2]) company.runs[2] = value
+        }
+
         Games.changeHappened()
         popupDialog.dismiss()
     }
 
-    fun numberPress(i: Int) {
-        Log.i("MHA", "key press " + i.toString())
+    private fun numberPress(i: Int) {
+        if (clearOnNextPress) {
+            currentInput = ""
+            clearOnNextPress = false
+        }
+        currentInput += i.toString()
+        runDisplay.text = currentInput
     }
 }

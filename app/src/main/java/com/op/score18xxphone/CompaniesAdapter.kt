@@ -1,13 +1,12 @@
 package com.op.score18xxphone
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.graphics.Color
-import android.graphics.PorterDuff
-import android.util.Log
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -21,80 +20,59 @@ enum class CompanyViewType {
 
 class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
 
-    class CompanyViewHolder(
-        itemView: View, parent: ViewGroup
-    ) : ViewHolder(itemView) {
-
-        private var parentViewGroup = parent
+    class CompanyViewHolder(itemView: View) : ViewHolder(itemView) {
 
         @SuppressLint("SetTextI18n")
         fun bind(index: Int) {
-            var company = games[currentGameIndex].companies[index - 1]
+            val company = games[currentGameIndex].companies[index - 1]
 
-            var companyNameView: TextView = itemView.findViewById(R.id.item_company_name)
+            val companyNameView: TextView = itemView.findViewById(R.id.item_company_name)
             companyNameView.text = company.name
             companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
             companyNameView.setTextColor(Color.parseColor(company.textColor))
-            //companyNameView.clipToOutline = true
+            companyNameView.setOnClickListener { SharesDialog(itemView.context, company).show() }
 
-            var stockPriceView: TextView = itemView.findViewById(R.id.item_company_stock_price)
+            val stockPriceView: TextView = itemView.findViewById(R.id.item_company_stock_price)
             stockPriceView.text = company.stockPrice.toString()
-            stockPriceView.setOnClickListener {
-                launchStockPricePopup(
-                    parentViewGroup, company
-                )
+            stockPriceView.setOnClickListener { StockPriceDialog(itemView.context, company).show() }
+
+            val runViews = listOf<TextView>(
+                itemView.findViewById(R.id.item_company_or1),
+                itemView.findViewById(R.id.item_company_or2),
+                itemView.findViewById(R.id.item_company_or3)
+            )
+            runViews.forEachIndexed { i, view ->
+                view.text = company.runs[i].toString()
+                val isPrePopulated = !company.runsExplicitlySet[i] && company.runs[i] != 0
+                view.setTypeface(null, if (isPrePopulated) Typeface.ITALIC else Typeface.NORMAL)
+                view.setOnClickListener { RunInputDialog(itemView.context, company, i).show() }
             }
-            var or1RunView: TextView = itemView.findViewById(R.id.item_company_or1)
-            or1RunView.text = company.runs[0].toString()
-            or1RunView.setOnClickListener { launchRunPopup(parentViewGroup, company, 0) }
-        }
-
-        fun launchStockPricePopup(parent: ViewGroup, company: Company) {
-            StockPriceDialog(parent, company).show()
-        }
-
-        fun launchRunPopup(parent: ViewGroup, company: Company, runNumber: Int) {
-            RunInputDialog(parent, company, runNumber).show()
         }
     }
 
-    class LabelViewHolder(
-        itemView: View
-    ) : ViewHolder(itemView) {
-
-        fun bind(index: Int) {
-        }
+    class LabelViewHolder(itemView: View) : ViewHolder(itemView) {
+        fun bind() {}
     }
 
     override fun getItemViewType(position: Int): Int {
-        if (position == 0) {
-            return CompanyViewType.LABELS.ordinal
-        } else {
-            return CompanyViewType.COMPANY.ordinal
-        }
+        return if (position == 0) CompanyViewType.LABELS.ordinal else CompanyViewType.COMPANY.ordinal
     }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup, viewType: Int
-    ): ViewHolder {
-        if (viewType == CompanyViewType.LABELS.ordinal) {
-            return LabelViewHolder(
-                LayoutInflater.from(parent.context).inflate(
-                    R.layout.item_company_header, parent, false
-                )
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        return if (viewType == CompanyViewType.LABELS.ordinal) {
+            LabelViewHolder(
+                LayoutInflater.from(parent.context).inflate(R.layout.item_company_header, parent, false)
             )
         } else {
-            return CompanyViewHolder(
-                LayoutInflater.from(parent.context).inflate(
-                    R.layout.item_company, parent, false
-                ), parent
+            CompanyViewHolder(
+                LayoutInflater.from(parent.context).inflate(R.layout.item_company, parent, false)
             )
         }
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         if (position == 0) {
-            (holder as LabelViewHolder).bind(position)
+            (holder as LabelViewHolder).bind()
         } else {
             (holder as CompanyViewHolder).bind(position)
         }

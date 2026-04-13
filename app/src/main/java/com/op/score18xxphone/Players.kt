@@ -1,18 +1,31 @@
 package com.op.score18xxphone
 
-data class Player(val name: String)
+data class Player(val name: String, var cash: Int = 0)
 
 object Players {
     var players: MutableList<Player> = mutableListOf()
-    lateinit var callback: () -> Unit
+
+    private val callbacks = LinkedHashMap<Any, () -> Unit>()
+
+    fun addCallback(owner: Any, callback: () -> Unit) {
+        callbacks[owner] = callback
+    }
+
+    fun removeCallback(owner: Any) {
+        callbacks.remove(owner)
+    }
 
     fun addPlayerByName(name: String) {
         players += Player(name)
-        callback()
+        notifyCallbacks()
     }
 
     fun removePlayerByIndex(index: Int) {
         players.removeAt(index)
-        callback()
+        notifyCallbacks()
+    }
+
+    private fun notifyCallbacks() {
+        callbacks.values.toList().forEach { it() }
     }
 }

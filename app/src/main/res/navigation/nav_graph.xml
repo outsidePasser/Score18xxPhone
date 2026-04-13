@@ -19,8 +19,14 @@
 
     <fragment
         android:id="@+id/albumsFragment"
-        android:name="com.op.score18xxphone.FavouritesFragment"
-        android:label="Albums"
-        tools:layout="@layout/fragment_favourites" />
+        android:name="com.op.score18xxphone.PlayersFragment"
+        android:label="Players"
+        tools:layout="@layout/fragment_players" />
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.op.score18xxphone.SummaryFragment"
+        android:label="Summary"
+        tools:layout="@layout/fragment_summary" />
 
 </navigation>

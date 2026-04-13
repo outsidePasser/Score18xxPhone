@@ -12,6 +12,11 @@
 
     <item
         android:id="@id/albumsFragment"
-        android:icon="@drawable/ic_baseline_setup_24"
+        android:icon="@drawable/ic_baseline_players_24"
         android:title="@string/menu_players" />
+
+    <item
+        android:id="@id/summaryFragment"
+        android:icon="@drawable/ic_baseline_spreadsheet_24"
+        android:title="@string/menu_summary" />
 </menu>
