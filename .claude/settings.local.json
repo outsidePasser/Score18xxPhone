@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(robocopy \"C:\\\\Backups\\\\C\\\\Users\\\\outsi\\\\AndroidStudioProjects\\\\Score18xxPhone\" \"C:\\\\SoftwareDevelopment\\\\Score18xxPhone\" /E /XD \".git\" /XF \".gitignore\")",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(robocopy \"C:\\\\Backups\\\\C\\\\Users\\\\outsi\\\\AndroidStudioProjects\\\\Score18xxPhone\" \"C:\\\\SoftwareDevelopment\\\\Score18xxPhone\" /E /XD .git)",
+      "Bash(grep -n \"setTitle\\\\|setPositiveButton\\\\|setNegativeButton\\\\|setText.*\\\\\"\" \"C:\\\\SoftwareDevelopment\\\\Score18xxPhone\\\\app\\\\src\\\\main\\\\java\\\\com\\\\op\\\\score18xxphone\"/*.kt)",
+      "Bash(grep:*)",
+      "Bash(find C:\\\\SoftwareDevelopment\\\\Score18xxPhone\\\\app\\\\src\\\\main\\\\res\\\\layout:*)"
+    ]
+  }
+}
