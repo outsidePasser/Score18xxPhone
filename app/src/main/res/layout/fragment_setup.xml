@@ -11,48 +11,48 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0sp"
+        android:layout_height="0dp"
         android:layout_weight="15"
         android:text="@string/game"
         android:textSize="26sp"
         android:textColor="@color/white"
-        android:paddingBottom="10sp"
+        android:paddingBottom="10dp"
         android:gravity="center_horizontal|bottom"/>
 
     <Spinner
         android:id="@+id/game"
         android:layout_width="match_parent"
-        android:layout_height="0sp"
+        android:layout_height="0dp"
         android:layout_weight="10"
         android:textColor="@color/white"
-        android:paddingTop="15sp"
-        android:paddingBottom="15sp"
-        android:paddingLeft= "40sp"
-        android:paddingRight="40sp"        />
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft= "40dp"
+        android:paddingRight="40dp"        />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="0sp"
+        android:layout_height="0dp"
         android:layout_weight="8"
         android:text="@string/players"
         android:textSize="26sp"
         android:textColor="@color/white"
         android:background="@color/black"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="10sp"
+        android:paddingBottom="10dp"
         android:gravity="center_horizontal|bottom"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/player_list_view"
         android:layout_width="match_parent"
-        android:layout_height="0sp"
+        android:layout_height="0dp"
         android:layout_weight="65"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_player"
-        android:paddingTop="15sp"
-        android:paddingLeft= "40sp"
-        android:paddingRight="40sp"
+        android:paddingTop="15dp"
+        android:paddingLeft= "40dp"
+        android:paddingRight="40dp"
         />
 
 </LinearLayout>

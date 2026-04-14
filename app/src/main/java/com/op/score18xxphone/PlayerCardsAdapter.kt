@@ -1,6 +1,5 @@
 package com.op.score18xxphone
 
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,25 +41,40 @@ class PlayerCardsAdapter : RecyclerView.Adapter<PlayerCardsAdapter.PlayerCardVie
             val sharesContainer: LinearLayout = itemView.findViewById(R.id.player_card_shares)
             sharesContainer.removeAllViews()
 
-            game.companies.forEachIndexed { companyIndex, company ->
+            val ownedShares = game.companies.mapNotNull { company ->
                 val shareCount = company.shares.getOrElse(playerIndex) { 0 }
-                if (shareCount > 0) {
-                    val row = LayoutInflater.from(itemView.context).inflate(
-                        R.layout.item_player_company_share, sharesContainer, false
+                if (shareCount > 0) Pair(company, shareCount) else null
+            }
+
+            ownedShares.chunked(2).forEach { pair ->
+                val rowLayout = LinearLayout(itemView.context).apply {
+                    orientation = LinearLayout.HORIZONTAL
+                    layoutParams = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
                     )
-                    val companyNameView: TextView = row.findViewById(R.id.player_share_company_name)
+                }
+                pair.forEach { (company, shareCount) ->
+                    val shareView = LayoutInflater.from(itemView.context).inflate(
+                        R.layout.item_player_company_share, rowLayout, false
+                    )
+                    shareView.layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                    val companyNameView: TextView = shareView.findViewById(R.id.player_share_company_name)
                     companyNameView.text = company.name
                     companyNameView.background.colorFilter =
                         BlendModeColorFilterCompat.createBlendModeColorFilterCompat(
-                            Color.parseColor(company.color), BlendModeCompat.SRC_ATOP
+                            company.colorInt(), BlendModeCompat.SRC_ATOP
                         )
-                    companyNameView.setTextColor(Color.parseColor(company.textColor))
-
-                    val countView: TextView = row.findViewById(R.id.player_share_count)
-                    countView.text = shareCount.toString()
-
-                    sharesContainer.addView(row)
+                    companyNameView.setTextColor(company.textColorInt())
+                    shareView.findViewById<TextView>(R.id.player_share_count).text = shareCount.toString()
+                    rowLayout.addView(shareView)
                 }
+                if (pair.size == 1) {
+                    rowLayout.addView(View(itemView.context).apply {
+                        layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+                    })
+                }
+                sharesContainer.addView(rowLayout)
             }
         }
 

@@ -45,7 +45,7 @@ class SetupFragment : Fragment() {
         binding.game.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 if (lastGameIndex != -1 && lastGameIndex != position) {
-                    Players.players.forEach { it.cash = 0 }
+                    Players.resetAllCash()
                     Games.resetGame(position)
                     Players.changeHappened()
                     Games.changeHappened()

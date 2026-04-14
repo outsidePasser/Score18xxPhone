@@ -1,7 +1,6 @@
 package com.op.score18xxphone
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -51,9 +50,9 @@ class PlayerSharesDialog(context: Context, private val playerIndex: Int) {
             nameView.setBackgroundResource(R.drawable.rounded_corner)
             nameView.background.colorFilter = BlendModeColorFilterCompat
                 .createBlendModeColorFilterCompat(
-                    Color.parseColor(company.color), BlendModeCompat.SRC_ATOP
+                    company.colorInt(), BlendModeCompat.SRC_ATOP
                 )
-            nameView.setTextColor(Color.parseColor(company.textColor))
+            nameView.setTextColor(company.textColorInt())
 
             val countView: TextView = row.findViewById(R.id.share_count)
             countView.text = pendingShares[i].toString()
@@ -65,7 +64,7 @@ class PlayerSharesDialog(context: Context, private val playerIndex: Int) {
                 }
             }
             row.findViewById<TextView>(R.id.share_plus).setOnClickListener {
-                if (pendingShares[i] < 10) {
+                if (pendingShares[i] < game.maxSharesPerPlayer) {
                     pendingShares[i]++
                     countView.text = pendingShares[i].toString()
                 }

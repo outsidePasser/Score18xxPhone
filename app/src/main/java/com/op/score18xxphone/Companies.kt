@@ -9,3 +9,6 @@ data class Company(
     var runsExplicitlySet: MutableList<Boolean> = mutableListOf(false, false, false),
     var shares: MutableList<Int> = mutableListOf()
 )
+
+fun Company.colorInt(): Int = runCatching { android.graphics.Color.parseColor(color) }.getOrDefault(android.graphics.Color.GRAY)
+fun Company.textColorInt(): Int = runCatching { android.graphics.Color.parseColor(textColor) }.getOrDefault(android.graphics.Color.WHITE)

@@ -8,16 +8,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48sp"
+        android:layout_height="48dp"
         android:orientation="horizontal"
         tools:ignore="UselessParent">
 
         <TextView
-            android:layout_width="0sp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:background="@color/black"
             android:gravity="end"
             android:textColor="@color/white"
@@ -27,17 +27,17 @@
         <TextView
             android:id="@+id/stock_picker_company"
             style="@style/CompanyName"
-            android:layout_width="0sp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="6"
             />
 
         <TextView
-            android:layout_width="0sp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="17"
-            android:layout_marginLeft="5sp"
-            android:layout_marginRight="5sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:background="@color/black"
             android:gravity="start|center_vertical"
             android:text="@string/final_stock_price"

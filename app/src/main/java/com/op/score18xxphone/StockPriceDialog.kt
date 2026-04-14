@@ -23,25 +23,31 @@ class StockPriceDialog(context: Context, company: Company) {
         val game = games[currentGameIndex]
 
         companyNameView.text = company.name
-        companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
-        companyNameView.setTextColor(Color.parseColor(company.textColor))
+        companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(company.colorInt(), BlendModeCompat.SRC_ATOP)
+        companyNameView.setTextColor(company.textColorInt())
 
-        for (i in 0..(game.stockPrices.size + 1) step 5) {
+        for (i in 0..game.stockPrices.size step 5) {
             val row = LayoutInflater.from(context).inflate(
                 R.layout.stock_price_picker_row, picker, false
             ) as ViewGroup
             picker.addView(row)
-            for (j in i..(i + 4)) {
-                val price: TextView = row.getChildAt(j - i) as TextView
-                if (j == 0) {
-                    price.text = "0"
-                    price.setOnClickListener { choosePrice(company, price.text.toString()) }
-                } else if (j <= game.stockPrices.size) {
-                    price.text = game.stockPrices[j - 1].toString()
-                    price.setOnClickListener { choosePrice(company, price.text.toString()) }
-                } else {
-                    price.text = ""
-                    price.setBackgroundColor(Color.BLACK)
+            for (col in 0 until row.childCount) {
+                val priceView = row.getChildAt(col) as? TextView ?: continue
+                val priceIndex = i + col
+                when {
+                    priceIndex == 0 -> {
+                        priceView.text = "0"
+                        priceView.setOnClickListener { choosePrice(company, "0") }
+                    }
+                    priceIndex <= game.stockPrices.size -> {
+                        val value = game.stockPrices[priceIndex - 1].toString()
+                        priceView.text = value
+                        priceView.setOnClickListener { choosePrice(company, value) }
+                    }
+                    else -> {
+                        priceView.text = ""
+                        priceView.setBackgroundColor(Color.BLACK)
+                    }
                 }
             }
         }

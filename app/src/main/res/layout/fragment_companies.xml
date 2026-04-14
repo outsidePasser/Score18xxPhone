@@ -12,12 +12,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/company_list_view"
         android:layout_width="match_parent"
-        android:layout_height="0sp"
+        android:layout_height="0dp"
         android:layout_weight="65"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_player"
-        android:paddingTop="10sp"
+        android:paddingTop="10dp"
         />
 
 </LinearLayout>

@@ -1,7 +1,6 @@
 package com.op.score18xxphone
 
 import android.annotation.SuppressLint
-import android.graphics.Color
 import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
@@ -28,8 +27,8 @@ class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
 
             val companyNameView: TextView = itemView.findViewById(R.id.item_company_name)
             companyNameView.text = company.name
-            companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
-            companyNameView.setTextColor(Color.parseColor(company.textColor))
+            companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(company.colorInt(), BlendModeCompat.SRC_ATOP)
+            companyNameView.setTextColor(company.textColorInt())
             companyNameView.setOnClickListener { SharesDialog(itemView.context, company).show() }
 
             val stockPriceView: TextView = itemView.findViewById(R.id.item_company_stock_price)

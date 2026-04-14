@@ -16,6 +16,8 @@ enum class PlayerViewType {
     PLAYER, ADD_BUTTON
 }
 
+private const val MAX_PLAYERS = 8
+
 class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
 
     class PlayerViewHolder(itemView: View) : ViewHolder(itemView) {
@@ -50,6 +52,7 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
             val input = EditText(itemView.context).apply {
                 inputType = android.text.InputType.TYPE_CLASS_TEXT or
                         android.text.InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
+                hint = context.getString(R.string.player)
             }
             val container = FrameLayout(itemView.context).apply {
                 val padding = (16 * itemView.resources.displayMetrics.density).toInt()
@@ -59,7 +62,8 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
             alert.setView(container)
 
             alert.setPositiveButton(R.string.confirm) { _, _ ->
-                Players.addPlayerByName(input.text.toString())
+                val name = input.text.toString().trim()
+                if (name.isNotEmpty()) Players.addPlayerByName(name)
             }
             alert.setNegativeButton(R.string.cancel, null)
 
@@ -93,5 +97,5 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
         }
     }
 
-    override fun getItemCount() = players.size + 1
+    override fun getItemCount() = if (players.size < MAX_PLAYERS) players.size + 1 else players.size
 }

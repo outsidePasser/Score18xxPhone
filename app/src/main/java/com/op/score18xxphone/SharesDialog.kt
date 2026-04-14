@@ -1,7 +1,6 @@
 package com.op.score18xxphone
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -9,6 +8,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
+import com.op.score18xxphone.Games.currentGameIndex
+import com.op.score18xxphone.Games.games
 
 class SharesDialog(context: Context, company: Company) {
     private val popupDialog: AlertDialog
@@ -22,9 +23,9 @@ class SharesDialog(context: Context, company: Company) {
         val companyNameView: TextView = view.findViewById(R.id.shares_company_name)
         companyNameView.text = company.name
         companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(
-            Color.parseColor(company.color), BlendModeCompat.SRC_ATOP
+            company.colorInt(), BlendModeCompat.SRC_ATOP
         )
-        companyNameView.setTextColor(Color.parseColor(company.textColor))
+        companyNameView.setTextColor(company.textColorInt())
 
         val pendingShares = Players.players.indices.map { i ->
             company.shares.getOrElse(i) { 0 }
@@ -46,7 +47,7 @@ class SharesDialog(context: Context, company: Company) {
                 }
             }
             row.findViewById<TextView>(R.id.share_plus).setOnClickListener {
-                if (pendingShares[i] < 10) {
+                if (pendingShares[i] < games[currentGameIndex].maxSharesPerPlayer) {
                     pendingShares[i]++
                     countView.text = pendingShares[i].toString()
                 }

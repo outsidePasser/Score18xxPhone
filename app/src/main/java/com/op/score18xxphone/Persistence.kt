@@ -50,8 +50,7 @@ object Persistence {
         try {
             val state = Gson().fromJson(json, AppState::class.java)
 
-            Players.players.clear()
-            state.players.forEach { p -> Players.players.add(Player(p.name, p.cash)) }
+            Players.restorePlayers(state.players.map { p -> Player(p.name, p.cash) })
 
             state.gameStates.forEach { (gameIndexStr, companyStates) ->
                 val gameIndex = gameIndexStr.toIntOrNull() ?: return@forEach

@@ -1,7 +1,6 @@
 package com.op.score18xxphone
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -23,8 +22,8 @@ class RunInputDialog(context: Context, company: Company, runNumber: Int) {
 
         val companyNameView: TextView = picker.findViewById(R.id.run_input_company)
         companyNameView.text = company.name
-        companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(Color.parseColor(company.color), BlendModeCompat.SRC_ATOP)
-        companyNameView.setTextColor(Color.parseColor(company.textColor))
+        companyNameView.background.colorFilter = BlendModeColorFilterCompat.createBlendModeColorFilterCompat(company.colorInt(), BlendModeCompat.SRC_ATOP)
+        companyNameView.setTextColor(company.textColorInt())
 
         val runNumberView: TextView = picker.findViewById(R.id.run_input_run_number)
         runNumberView.text = context.getString(arrayOf(R.string.run_1, R.string.run_2, R.string.run_3)[runNumber])

@@ -3,7 +3,8 @@ package com.op.score18xxphone
 data class Player(val name: String, var cash: Int = 0)
 
 object Players {
-    var players: MutableList<Player> = mutableListOf()
+    private val _players: MutableList<Player> = mutableListOf()
+    val players: List<Player> get() = _players
 
     private val callbacks = LinkedHashMap<Any, () -> Unit>()
 
@@ -16,13 +17,22 @@ object Players {
     }
 
     fun addPlayerByName(name: String) {
-        players += Player(name)
+        _players += Player(name)
         notifyCallbacks()
     }
 
     fun removePlayerByIndex(index: Int) {
-        players.removeAt(index)
+        _players.removeAt(index)
         notifyCallbacks()
+    }
+
+    fun restorePlayers(newPlayers: List<Player>) {
+        _players.clear()
+        _players.addAll(newPlayers)
+    }
+
+    fun resetAllCash() {
+        _players.forEach { it.cash = 0 }
     }
 
     fun changeHappened() {
