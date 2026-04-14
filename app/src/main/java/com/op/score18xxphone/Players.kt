@@ -25,6 +25,10 @@ object Players {
         notifyCallbacks()
     }
 
+    fun changeHappened() {
+        notifyCallbacks()
+    }
+
     private fun notifyCallbacks() {
         callbacks.values.toList().forEach { it() }
     }

@@ -11,6 +11,7 @@ object Games {
     var games: List<Game> = emptyList()
     var currentGameIndex = 0
 
+    private var initialStockPrices: List<List<Int>> = emptyList()
     private val callbacks = LinkedHashMap<Any, () -> Unit>()
 
     fun addCallback(owner: Any, callback: () -> Unit) {
@@ -42,7 +43,20 @@ object Games {
             }
         }
 
+        initialStockPrices = games.map { game -> game.companies.map { it.stockPrice } }
+
         Persistence.load()
+    }
+
+    fun resetGame(gameIndex: Int) {
+        val game = games.getOrNull(gameIndex) ?: return
+        val origPrices = initialStockPrices.getOrNull(gameIndex) ?: return
+        game.companies.forEachIndexed { i, company ->
+            company.stockPrice = origPrices.getOrElse(i) { company.stockPrice }
+            company.runs = mutableListOf(0, 0, 0)
+            company.runsExplicitlySet = mutableListOf(false, false, false)
+            company.shares = mutableListOf()
+        }
     }
 
     fun changeHappened() {

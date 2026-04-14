@@ -6,7 +6,19 @@
       "Bash(robocopy \"C:\\\\Backups\\\\C\\\\Users\\\\outsi\\\\AndroidStudioProjects\\\\Score18xxPhone\" \"C:\\\\SoftwareDevelopment\\\\Score18xxPhone\" /E /XD .git)",
       "Bash(grep -n \"setTitle\\\\|setPositiveButton\\\\|setNegativeButton\\\\|setText.*\\\\\"\" \"C:\\\\SoftwareDevelopment\\\\Score18xxPhone\\\\app\\\\src\\\\main\\\\java\\\\com\\\\op\\\\score18xxphone\"/*.kt)",
       "Bash(grep:*)",
-      "Bash(find C:\\\\SoftwareDevelopment\\\\Score18xxPhone\\\\app\\\\src\\\\main\\\\res\\\\layout:*)"
+      "Bash(find C:\\\\SoftwareDevelopment\\\\Score18xxPhone\\\\app\\\\src\\\\main\\\\res\\\\layout:*)",
+      "Bash(sed 's/.*R\\\\.layout\\\\.//')",
+      "Bash(sed 's/[^a-z_].*//')",
+      "Bash(sed 's/\\\\.xml$//')",
+      "Bash(sed 's/R\\\\.drawable\\\\.//')",
+      "Bash(sed 's/R\\\\.string\\\\.//')",
+      "Bash(cat)",
+      "Bash(bash /tmp/find_unused.sh)",
+      "Bash(bash /tmp/final_check.sh)",
+      "Bash(python3)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
     ]
   }
 }

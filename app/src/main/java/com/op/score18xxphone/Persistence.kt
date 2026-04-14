@@ -10,9 +10,9 @@ object Persistence {
 
     private data class CompanyState(
         val stockPrice: Int,
-        val runs: List<Int>,
-        val runsExplicitlySet: List<Boolean>,
-        val shares: List<Int>
+        val runs: List<Int>?,
+        val runsExplicitlySet: List<Boolean>?,
+        val shares: List<Int>?
     )
 
     private data class PlayerState(val name: String, val cash: Int)
@@ -59,9 +59,9 @@ object Persistence {
                 companyStates.forEachIndexed { companyIndex, cs ->
                     val company = game.companies.getOrNull(companyIndex) ?: return@forEachIndexed
                     company.stockPrice = cs.stockPrice
-                    company.runs = cs.runs.toMutableList()
-                    company.runsExplicitlySet = cs.runsExplicitlySet.toMutableList()
-                    company.shares = cs.shares.toMutableList()
+                    company.runs = cs.runs?.toMutableList() ?: mutableListOf(0, 0, 0)
+                    company.runsExplicitlySet = cs.runsExplicitlySet?.toMutableList() ?: mutableListOf(false, false, false)
+                    company.shares = cs.shares?.toMutableList() ?: mutableListOf()
                 }
             }
         } catch (e: Exception) {
