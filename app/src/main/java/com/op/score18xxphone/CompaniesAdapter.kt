@@ -50,9 +50,7 @@ class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
         }
     }
 
-    class LabelViewHolder(itemView: View) : ViewHolder(itemView) {
-        fun bind() {}
-    }
+    class LabelViewHolder(itemView: View) : ViewHolder(itemView)
 
     override fun getItemViewType(position: Int): Int {
         return if (position == 0) CompanyViewType.LABELS.ordinal else CompanyViewType.COMPANY.ordinal
@@ -71,9 +69,7 @@ class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        if (position == 0) {
-            (holder as LabelViewHolder).bind()
-        } else {
+        if (position != 0) {
             (holder as CompanyViewHolder).bind(position)
         }
     }

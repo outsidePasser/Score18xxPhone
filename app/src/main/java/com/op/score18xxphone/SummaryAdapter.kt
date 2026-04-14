@@ -1,5 +1,6 @@
 package com.op.score18xxphone
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ class SummaryAdapter : RecyclerView.Adapter<SummaryAdapter.SummaryViewHolder>() 
 
     private var rows: List<PlayerRow> = buildRows()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun refresh() {
         rows = buildRows()
         notifyDataSetChanged()

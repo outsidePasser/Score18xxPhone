@@ -1,6 +1,5 @@
 package com.op.score18xxphone
 
-import com.op.score18xxphone.Players.players
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +9,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.op.score18xxphone.Players.players
 
 enum class PlayerViewType {
     PLAYER, ADD_BUTTON

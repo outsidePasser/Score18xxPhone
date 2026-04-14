@@ -1,19 +1,16 @@
 package com.op.score18xxphone
 
 import android.content.Context
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import com.op.score18xxphone.Games.currentGameIndex
-import com.op.score18xxphone.Games.games
-import android.graphics.Color
-import androidx.core.content.ContextCompat.getString
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
 
 class RunInputDialog(context: Context, company: Company, runNumber: Int) {
-    val popupDialog: AlertDialog
+    private val popupDialog: AlertDialog
     private var currentInput: String = ""
     private var clearOnNextPress: Boolean = false
     private lateinit var runDisplay: TextView
@@ -30,7 +27,7 @@ class RunInputDialog(context: Context, company: Company, runNumber: Int) {
         companyNameView.setTextColor(Color.parseColor(company.textColor))
 
         val runNumberView: TextView = picker.findViewById(R.id.run_input_run_number)
-        runNumberView.text = getString(context, arrayOf(R.string.run_1, R.string.run_2, R.string.run_3)[runNumber])
+        runNumberView.text = context.getString(arrayOf(R.string.run_1, R.string.run_2, R.string.run_3)[runNumber])
 
         runDisplay = picker.findViewById(R.id.run_display)
         val existingValue = company.runs[runNumber]
@@ -59,9 +56,7 @@ class RunInputDialog(context: Context, company: Company, runNumber: Int) {
         popupDialog = builder.create()
     }
 
-    fun show() {
-        popupDialog.show()
-    }
+    fun show() = popupDialog.show()
 
     private fun chooseRun(company: Company, runNumber: Int) {
         val value = if (currentInput.isEmpty()) 0 else currentInput.toInt()

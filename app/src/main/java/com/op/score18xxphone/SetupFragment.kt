@@ -1,5 +1,6 @@
 package com.op.score18xxphone
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,6 +15,7 @@ class SetupFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var adapter: PlayersAdapter
+    private var lastGameIndex = -1
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +25,7 @@ class SetupFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupSpinner()
@@ -40,10 +43,17 @@ class SetupFragment : Fragment() {
             binding.game.adapter = spinnerAdapter
         }
         binding.game.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                Games.currentGameIndex = p2
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                if (lastGameIndex != -1 && lastGameIndex != position) {
+                    Players.players.forEach { it.cash = 0 }
+                    Games.resetGame(position)
+                    Players.changeHappened()
+                    Games.changeHappened()
+                }
+                lastGameIndex = position
+                Games.currentGameIndex = position
             }
-            override fun onNothingSelected(p0: AdapterView<*>?) {}
+            override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
     }
 
