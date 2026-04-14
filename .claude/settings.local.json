@@ -19,7 +19,10 @@
       "Bash(git rm:*)",
       "Bash(git add:*)",
       "Bash(git commit -m ':*)",
-      "Bash(ls app/src/main/res/layout/*.xml)"
+      "Bash(ls app/src/main/res/layout/*.xml)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(python:*)"
     ]
   }
 }
