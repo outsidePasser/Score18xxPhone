@@ -2,6 +2,7 @@ package com.op.score18xxphone
 
 import android.content.Context
 import android.util.Log
+import androidx.core.content.edit
 import com.google.gson.Gson
 
 object Persistence {
@@ -37,10 +38,9 @@ object Persistence {
             }
         }.toMap()
         val json = gson.toJson(AppState(playerStates, gameStates))
-        App.context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-            .edit()
-            .putString(KEY_STATE, json)
-            .apply()
+        App.context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit {
+            putString(KEY_STATE, json)
+        }
     }
 
     fun load() {

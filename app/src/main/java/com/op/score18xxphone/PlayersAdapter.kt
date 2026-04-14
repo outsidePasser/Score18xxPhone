@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.EditText
+import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
@@ -50,7 +51,12 @@ class PlayersAdapter : RecyclerView.Adapter<ViewHolder>() {
                 inputType = android.text.InputType.TYPE_CLASS_TEXT or
                         android.text.InputType.TYPE_TEXT_FLAG_CAP_SENTENCES
             }
-            alert.setView(input)
+            val container = FrameLayout(itemView.context).apply {
+                val padding = (16 * itemView.resources.displayMetrics.density).toInt()
+                setPadding(padding, 0, padding, 0)
+            }
+            container.addView(input)
+            alert.setView(container)
 
             alert.setPositiveButton(R.string.confirm) { _, _ ->
                 Players.addPlayerByName(input.text.toString())
