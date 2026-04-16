@@ -11,10 +11,6 @@
         style="@style/CompanyName" />
 
     <TextView
-        android:id="@+id/item_company_stock_price"
-        style="@style/CompanyInput" />
-
-    <TextView
         android:id="@+id/item_company_or1"
         style="@style/CompanyInput" />
 
@@ -26,6 +22,10 @@
 
     <TextView
         android:id="@+id/item_company_or3"
+        style="@style/CompanyInput" />
+
+    <TextView
+        android:id="@+id/item_company_stock_price"
         style="@style/CompanyInput" />
 
 </LinearLayout>

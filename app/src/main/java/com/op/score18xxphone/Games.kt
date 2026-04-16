@@ -5,7 +5,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
 
-data class Game(val title: String, val fullName: String, val stockPrices: List<Int>, val companies: List<Company>, val maxSharesPerPlayer: Int = 10)
+data class Game(val title: String, val fullName: String, val stockPrices: List<Int>, val companies: MutableList<Company>, val maxSharesPerPlayer: Int = 10, val operatingRounds: Int = 3)
 
 object Games {
     var games: List<Game> = emptyList()

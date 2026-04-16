@@ -22,7 +22,14 @@
       "Bash(ls app/src/main/res/layout/*.xml)",
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(./gradlew assembleDebug *)",
+      "Bash(C:/Program Files/Java/jdk-21/bin/keytool.exe *)",
+      "WebSearch",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(python3 -c \"import json; data=json.load\\(open\\('C:/SoftwareDevelopment/Score18xxPhone/app/src/main/assets/game_data.json'\\)\\); [print\\(g['title']\\) for g in data]\")",
+      "Bash(python3 *)"
     ]
   }
 }

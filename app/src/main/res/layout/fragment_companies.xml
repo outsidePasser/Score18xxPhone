@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:background="@color/black"
     android:textColor="@color/white"
+    android:clipChildren="false"
     tools:context="com.op.score18xxphone.CompaniesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,8 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_player"
         android:paddingTop="10dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
         />
 
 </LinearLayout>
