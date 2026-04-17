@@ -29,7 +29,14 @@
       "WebFetch(domain:medium.com)",
       "WebFetch(domain:github.com)",
       "Bash(python3 -c \"import json; data=json.load\\(open\\('C:/SoftwareDevelopment/Score18xxPhone/app/src/main/assets/game_data.json'\\)\\); [print\\(g['title']\\) for g in data]\")",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_18_usa/game.rb\" -o /tmp/18usa_game.rb)",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_18_usa/meta.rb\" -o /tmp/18usa_meta.rb)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_18_usa.rb\" -o /tmp/18usa_base.rb)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_18_usa/entities.rb\" -o /tmp/18usa_entities.rb)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1817/game.rb\" -o /tmp/1817_game.rb)",
+      "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1817/round/operating.rb\")"
     ]
   }
 }

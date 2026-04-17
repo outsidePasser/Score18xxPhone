@@ -1,6 +1,6 @@
 package com.op.score18xxphone
 
-data class Player(val name: String, var cash: Int = 0)
+data class Player(val name: String, var cash: Int = 0, var otherAssets: Int = 0)
 
 object Players {
     private val _players: MutableList<Player> = mutableListOf()

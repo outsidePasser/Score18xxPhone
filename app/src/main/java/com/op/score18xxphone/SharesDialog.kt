@@ -27,6 +27,9 @@ class SharesDialog(context: Context, company: Company) {
         )
         companyNameView.setTextColor(company.textColorInt())
 
+        val game = games[currentGameIndex]
+        val minShares = if (game.allowNegativeShares) -game.maxSharesPerPlayer else 0
+
         val pendingShares = Players.players.indices.map { i ->
             company.shares.getOrElse(i) { 0 }
         }.toMutableList()
@@ -41,13 +44,13 @@ class SharesDialog(context: Context, company: Company) {
             countView.text = pendingShares[i].toString()
 
             row.findViewById<TextView>(R.id.share_minus).setOnClickListener {
-                if (pendingShares[i] > 0) {
+                if (pendingShares[i] > minShares) {
                     pendingShares[i]--
                     countView.text = pendingShares[i].toString()
                 }
             }
             row.findViewById<TextView>(R.id.share_plus).setOnClickListener {
-                if (pendingShares[i] < games[currentGameIndex].maxSharesPerPlayer) {
+                if (pendingShares[i] < (company.maxShares ?: game.maxSharesPerPlayer)) {
                     pendingShares[i]++
                     countView.text = pendingShares[i].toString()
                 }

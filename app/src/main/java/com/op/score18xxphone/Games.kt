@@ -5,7 +5,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.lang.reflect.Type
 
-data class Game(val title: String, val fullName: String, val stockPrices: List<Int>, val companies: MutableList<Company>, val maxSharesPerPlayer: Int = 10, val operatingRounds: Int = 3)
+data class Game(val title: String, val fullName: String, val stockPrices: List<Int>, val companies: MutableList<Company>, val maxSharesPerPlayer: Int = 10, val operatingRounds: Int = 3, val allowNegativeShares: Boolean = false)
 
 object Games {
     var games: List<Game> = emptyList()
@@ -37,8 +37,8 @@ object Games {
 
         games.forEach { game ->
             game.companies.forEach { company ->
-                company.runs = mutableListOf(0, 0, 0)
-                company.runsExplicitlySet = mutableListOf(false, false, false)
+                company.runs = mutableListOf(0, 0, 0, 0)
+                company.runsExplicitlySet = mutableListOf(false, false, false, false)
                 company.shares = mutableListOf()
             }
         }
@@ -53,8 +53,8 @@ object Games {
         val origPrices = initialStockPrices.getOrNull(gameIndex) ?: return
         game.companies.forEachIndexed { i, company ->
             company.stockPrice = origPrices.getOrElse(i) { company.stockPrice }
-            company.runs = mutableListOf(0, 0, 0)
-            company.runsExplicitlySet = mutableListOf(false, false, false)
+            company.runs = mutableListOf(0, 0, 0, 0)
+            company.runsExplicitlySet = mutableListOf(false, false, false, false)
             company.shares = mutableListOf()
         }
     }

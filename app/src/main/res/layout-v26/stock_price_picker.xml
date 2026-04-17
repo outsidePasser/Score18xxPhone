@@ -19,7 +19,7 @@
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
             android:background="@color/black"
-            android:gravity="right"
+            android:gravity="end"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -30,8 +30,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="5sp"
             android:layout_marginRight="5sp"
-            android:background="@color/black"
-            android:gravity="end|center_vertical"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:maxLines="1"
@@ -46,7 +46,7 @@
             android:layout_marginRight="5sp"
             android:background="@color/black"
             android:gravity="start|center_vertical"
-            android:text="Final Stock Price"
+            android:text="@string/final_stock_price"
             android:textColor="@color/white"
             android:textSize="24sp" />
 

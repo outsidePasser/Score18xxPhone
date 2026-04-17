@@ -16,17 +16,18 @@ object Persistence {
         val shares: List<Int>?
     )
 
-    private data class PlayerState(val name: String, val cash: Int)
+    private data class PlayerState(val name: String, val cash: Int, val otherAssets: Int = 0)
 
     private data class AppState(
         val players: List<PlayerState>,
-        val gameStates: Map<String, List<CompanyState>>
+        val gameStates: Map<String, List<CompanyState>>,
+        val currentGameIndex: Int = 0
     )
 
     fun save() {
         if (Games.games.isEmpty()) return
         val gson = Gson()
-        val playerStates = Players.players.map { PlayerState(it.name, it.cash) }
+        val playerStates = Players.players.map { PlayerState(it.name, it.cash, it.otherAssets) }
         val gameStates = Games.games.mapIndexed { gameIndex, game ->
             gameIndex.toString() to game.companies.map { company ->
                 CompanyState(
@@ -37,7 +38,7 @@ object Persistence {
                 )
             }
         }.toMap()
-        val json = gson.toJson(AppState(playerStates, gameStates))
+        val json = gson.toJson(AppState(playerStates, gameStates, Games.currentGameIndex))
         App.context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE).edit {
             putString(KEY_STATE, json)
         }
@@ -50,7 +51,8 @@ object Persistence {
         try {
             val state = Gson().fromJson(json, AppState::class.java)
 
-            Players.restorePlayers(state.players.map { p -> Player(p.name, p.cash) })
+            Players.restorePlayers(state.players.map { p -> Player(p.name, p.cash, p.otherAssets) })
+            Games.currentGameIndex = state.currentGameIndex.coerceIn(0, Games.games.lastIndex)
 
             state.gameStates.forEach { (gameIndexStr, companyStates) ->
                 val gameIndex = gameIndexStr.toIntOrNull() ?: return@forEach
@@ -58,8 +60,8 @@ object Persistence {
                 companyStates.forEachIndexed { companyIndex, cs ->
                     val company = game.companies.getOrNull(companyIndex) ?: return@forEachIndexed
                     company.stockPrice = cs.stockPrice
-                    company.runs = cs.runs?.toMutableList() ?: mutableListOf(0, 0, 0)
-                    company.runsExplicitlySet = cs.runsExplicitlySet?.toMutableList() ?: mutableListOf(false, false, false)
+                    company.runs = (cs.runs?.toMutableList() ?: mutableListOf()).also { while (it.size < 4) it.add(0) }
+                    company.runsExplicitlySet = (cs.runsExplicitlySet?.toMutableList() ?: mutableListOf()).also { while (it.size < 4) it.add(false) }
                     company.shares = cs.shares?.toMutableList() ?: mutableListOf()
                 }
             }

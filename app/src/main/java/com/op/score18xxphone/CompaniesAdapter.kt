@@ -40,7 +40,8 @@ class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
             val runViews = listOf<TextView>(
                 itemView.findViewById(R.id.item_company_or1),
                 itemView.findViewById(R.id.item_company_or2),
-                itemView.findViewById(R.id.item_company_or3)
+                itemView.findViewById(R.id.item_company_or3),
+                itemView.findViewById(R.id.item_company_or4)
             )
             runViews.forEachIndexed { i, view ->
                 if (i < operatingRounds) {
@@ -58,7 +59,9 @@ class CompaniesAdapter : RecyclerView.Adapter<ViewHolder>() {
 
     class LabelViewHolder(itemView: View) : ViewHolder(itemView) {
         fun bind(operatingRounds: Int) {
-            (itemView as ViewGroup).getChildAt(3).visibility = if (operatingRounds >= 3) VISIBLE else GONE
+            val group = itemView as ViewGroup
+            group.getChildAt(3).visibility = if (operatingRounds >= 3) VISIBLE else GONE
+            group.getChildAt(4).visibility = if (operatingRounds >= 4) VISIBLE else GONE
         }
     }
 

@@ -28,15 +28,10 @@ class PlayerCardsAdapter : RecyclerView.Adapter<PlayerCardsAdapter.PlayerCardVie
 
             itemView.findViewById<TextView>(R.id.player_card_cash).text = player.cash.toString()
 
+            itemView.findViewById<TextView>(R.id.player_card_other_assets).text = player.otherAssets.toString()
+
             val totalShares = game.companies.sumOf { it.shares.getOrElse(playerIndex) { 0 } }
             itemView.findViewById<TextView>(R.id.player_card_total_shares).text = totalShares.toString()
-
-            val totalValue = player.cash + game.companies.sumOf { company ->
-                val shareCount = company.shares.getOrElse(playerIndex) { 0 }
-                val shareValue = company.stockPrice + company.runs.sum() / 10.0
-                (shareCount * shareValue).toInt()
-            }
-            itemView.findViewById<TextView>(R.id.player_card_total_value).text = totalValue.toString()
 
             val sharesContainer: LinearLayout = itemView.findViewById(R.id.player_card_shares)
             sharesContainer.removeAllViews()

@@ -35,6 +35,18 @@ class PlayerSharesDialog(context: Context, private val playerIndex: Int) {
             }.show()
         }
 
+        var pendingOtherAssets = player.otherAssets
+        val otherAssetsView: TextView = view.findViewById(R.id.player_shares_other_assets)
+        otherAssetsView.text = pendingOtherAssets.toString()
+        otherAssetsView.setOnClickListener {
+            CashInputDialog(context, player.name, "Other Assets", pendingOtherAssets) { newValue ->
+                pendingOtherAssets = newValue
+                otherAssetsView.text = pendingOtherAssets.toString()
+            }.show()
+        }
+
+        val minShares = if (game.allowNegativeShares) -game.maxSharesPerPlayer else 0
+
         val pendingShares = game.companies.map { company ->
             company.shares.getOrElse(playerIndex) { 0 }
         }.toMutableList()
@@ -58,13 +70,13 @@ class PlayerSharesDialog(context: Context, private val playerIndex: Int) {
             countView.text = pendingShares[i].toString()
 
             row.findViewById<TextView>(R.id.share_minus).setOnClickListener {
-                if (pendingShares[i] > 0) {
+                if (pendingShares[i] > minShares) {
                     pendingShares[i]--
                     countView.text = pendingShares[i].toString()
                 }
             }
             row.findViewById<TextView>(R.id.share_plus).setOnClickListener {
-                if (pendingShares[i] < game.maxSharesPerPlayer) {
+                if (pendingShares[i] < (company.maxShares ?: game.maxSharesPerPlayer)) {
                     pendingShares[i]++
                     countView.text = pendingShares[i].toString()
                 }
@@ -76,6 +88,7 @@ class PlayerSharesDialog(context: Context, private val playerIndex: Int) {
         builder.setView(view)
         builder.setPositiveButton(R.string.confirm) { _, _ ->
             player.cash = pendingCash
+            player.otherAssets = pendingOtherAssets
             game.companies.forEachIndexed { i, company ->
                 while (company.shares.size <= playerIndex) company.shares.add(0)
                 company.shares[playerIndex] = pendingShares[i]

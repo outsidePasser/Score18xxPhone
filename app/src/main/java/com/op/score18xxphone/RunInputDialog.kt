@@ -12,7 +12,7 @@ class RunInputDialog(context: Context, company: Company, runNumber: Int) {
     private val popupDialog: AlertDialog
     private var currentInput: String = ""
     private var clearOnNextPress: Boolean = false
-    private lateinit var runDisplay: TextView
+    private val runDisplay: TextView
 
     init {
         val builder = AlertDialog.Builder(context)
@@ -26,7 +26,7 @@ class RunInputDialog(context: Context, company: Company, runNumber: Int) {
         companyNameView.setTextColor(company.textColorInt())
 
         val runNumberView: TextView = picker.findViewById(R.id.run_input_run_number)
-        runNumberView.text = context.getString(arrayOf(R.string.run_1, R.string.run_2, R.string.run_3)[runNumber])
+        runNumberView.text = context.getString(R.string.run_input_label, runNumber + 1)
 
         runDisplay = picker.findViewById(R.id.run_display)
         val existingValue = company.runs[runNumber]
@@ -65,6 +65,7 @@ class RunInputDialog(context: Context, company: Company, runNumber: Int) {
         if (runNumber == 0) {
             if (!company.runsExplicitlySet[1]) company.runs[1] = value
             if (!company.runsExplicitlySet[2]) company.runs[2] = value
+            if (!company.runsExplicitlySet[3]) company.runs[3] = value
         }
 
         Games.changeHappened()

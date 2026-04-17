@@ -316,7 +316,8 @@
       540,
       600
     ],
-    "operatingRounds": 2
+    "operatingRounds": 2,
+    "allowNegativeShares": true
   },
   {
     "title": "1817DE",
@@ -389,7 +390,8 @@
       540,
       600
     ],
-    "operatingRounds": 2
+    "operatingRounds": 2,
+    "allowNegativeShares": true
   },
   {
     "title": "1817NA",
@@ -502,7 +504,8 @@
       540,
       600
     ],
-    "operatingRounds": 2
+    "operatingRounds": 2,
+    "allowNegativeShares": true
   },
   {
     "title": "1817WO",
@@ -600,7 +603,8 @@
       540,
       600
     ],
-    "operatingRounds": 2
+    "operatingRounds": 2,
+    "allowNegativeShares": true
   },
   {
     "title": "1822",
@@ -928,21 +932,6 @@
     "title": "1822PNW",
     "fullName": "1822PNW",
     "companies": [
-      {
-        "name": "A",
-        "color": "#808080",
-        "textColor": "#ffffff"
-      },
-      {
-        "name": "B",
-        "color": "#808080",
-        "textColor": "#ffffff"
-      },
-      {
-        "name": "C",
-        "color": "#808080",
-        "textColor": "#ffffff"
-      },
       {
         "name": "NP",
         "color": "#221E20",
@@ -3002,7 +2991,8 @@
       {
         "name": "CGR",
         "color": "#000000",
-        "textColor": "#ffffff"
+        "textColor": "#ffffff",
+        "maxShares": 20
       }
     ],
     "maxSharesPerPlayer": 10,
@@ -4196,5 +4186,202 @@
       350
     ],
     "operatingRounds": 3
+  },
+  {
+    "title": "18USA",
+    "fullName": "18USA: Continental USA",
+    "allowNegativeShares": true,
+    "operatingRounds": 2,
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      42,
+      44,
+      46,
+      48,
+      50,
+      53,
+      56,
+      59,
+      62,
+      66,
+      70,
+      74,
+      78,
+      82,
+      86,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      127,
+      135,
+      142,
+      150,
+      157,
+      165,
+      172,
+      180,
+      190,
+      200,
+      210,
+      220,
+      230,
+      240,
+      250,
+      260,
+      270,
+      285,
+      300,
+      315,
+      330,
+      345,
+      360,
+      375,
+      390,
+      405,
+      420,
+      440,
+      460,
+      480,
+      500,
+      520,
+      540,
+      560,
+      580,
+      600,
+      625,
+      650,
+      675,
+      700,
+      725,
+      750,
+      775,
+      800
+    ],
+    "companies": [
+      {
+        "name": "ATSF",
+        "color": "#7090c9",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "B&O",
+        "color": "#025aaa",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "C&O",
+        "color": "#add8e6",
+        "textColor": "#000000",
+        "stockPrice": 0
+      },
+      {
+        "name": "DRG",
+        "color": "#a0522d",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "GN",
+        "color": "#87cefa",
+        "textColor": "#000000",
+        "stockPrice": 0
+      },
+      {
+        "name": "IC",
+        "color": "#32763f",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "KCS",
+        "color": "#ff0000",
+        "textColor": "#000000",
+        "stockPrice": 0
+      },
+      {
+        "name": "MILW",
+        "color": "#808080",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "MKT",
+        "color": "#018471",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "MP",
+        "color": "#4b0082",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "NYC",
+        "color": "#110a0c",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "N&W",
+        "color": "#8b0000",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "NP",
+        "color": "#000000",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "PRR",
+        "color": "#9acd32",
+        "textColor": "#000000",
+        "stockPrice": 0
+      },
+      {
+        "name": "SP",
+        "color": "#f48221",
+        "textColor": "#000000",
+        "stockPrice": 0
+      },
+      {
+        "name": "SR",
+        "color": "#228b22",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "SLSF",
+        "color": "#d02020",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "TP",
+        "color": "#800080",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      },
+      {
+        "name": "UP",
+        "color": "#ffd700",
+        "textColor": "#000000",
+        "stockPrice": 0
+      },
+      {
+        "name": "WP",
+        "color": "#a52a2a",
+        "textColor": "#ffffff",
+        "stockPrice": 0
+      }
+    ]
   }
 ]

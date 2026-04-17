@@ -6,11 +6,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
-class CashInputDialog(context: Context, player: Player, private val onSave: (Int) -> Unit) {
+class CashInputDialog(context: Context, playerName: String, label: String, initialValue: Int, private val onSave: (Int) -> Unit) {
+    constructor(context: Context, player: Player, onSave: (Int) -> Unit) :
+        this(context, player.name, context.getString(R.string.cash), player.cash, onSave)
+
     private val popupDialog: AlertDialog
     private var currentInput: String = ""
     private var clearOnNextPress: Boolean = false
-    private lateinit var cashDisplay: TextView
+    private val cashDisplay: TextView
 
     init {
         val builder = AlertDialog.Builder(context)
@@ -19,14 +22,14 @@ class CashInputDialog(context: Context, player: Player, private val onSave: (Int
         ) as ViewGroup
 
         val playerNameView: TextView = picker.findViewById(R.id.run_input_company)
-        playerNameView.text = player.name
+        playerNameView.text = playerName
         playerNameView.setBackgroundResource(R.drawable.rounded_corner_dark_gray)
 
-        picker.findViewById<TextView>(R.id.run_input_run_number).text = context.getString(R.string.cash)
+        picker.findViewById<TextView>(R.id.run_input_run_number).text = label
 
-        cashDisplay = picker.findViewById(R.id.run_display)
-        if (player.cash != 0) {
-            currentInput = player.cash.toString()
+        cashDisplay = picker.findViewById<TextView>(R.id.run_display)
+        if (initialValue != 0) {
+            currentInput = initialValue.toString()
             cashDisplay.text = currentInput
             clearOnNextPress = true
         }
