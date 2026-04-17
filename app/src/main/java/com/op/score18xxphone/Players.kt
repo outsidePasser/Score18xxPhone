@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 data class Player(val name: String, var cash: Int = 0, var otherAssets: Int = 0)
 

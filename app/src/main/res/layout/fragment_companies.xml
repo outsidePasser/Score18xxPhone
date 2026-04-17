@@ -8,7 +8,7 @@
     android:background="@color/black"
     android:textColor="@color/white"
     android:clipChildren="false"
-    tools:context="com.op.score18xxphone.CompaniesFragment">
+    tools:context="com.op.score18XXphone.CompaniesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/company_list_view"

@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import android.content.res.ColorStateList
 import android.os.Bundle
@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.chip.Chip
-import com.op.score18xxphone.databinding.FragmentSetupBinding
+import com.op.score18XXphone.databinding.FragmentSetupBinding
 
 private const val MAX_PLAYERS = 8
 

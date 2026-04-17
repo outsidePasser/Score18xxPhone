@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import androidx.core.graphics.toColorInt
 

@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import android.annotation.SuppressLint
 import android.graphics.Typeface
@@ -10,8 +10,8 @@ import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.op.score18xxphone.Games.currentGameIndex
-import com.op.score18xxphone.Games.games
+import com.op.score18XXphone.Games.currentGameIndex
+import com.op.score18XXphone.Games.games
 import android.view.View.GONE
 import android.view.View.VISIBLE
 

@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.graphics.BlendModeColorFilterCompat
 import androidx.core.graphics.BlendModeCompat
-import com.op.score18xxphone.Games.currentGameIndex
-import com.op.score18xxphone.Games.games
+import com.op.score18XXphone.Games.currentGameIndex
+import com.op.score18XXphone.Games.games
 
 class PlayerSharesDialog(context: Context, private val playerIndex: Int) {
     private val popupDialog: AlertDialog

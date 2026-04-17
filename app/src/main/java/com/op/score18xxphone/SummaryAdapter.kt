@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.op.score18xxphone.Games.currentGameIndex
-import com.op.score18xxphone.Games.games
+import com.op.score18XXphone.Games.currentGameIndex
+import com.op.score18XXphone.Games.games
 
 class SummaryAdapter : RecyclerView.Adapter<SummaryAdapter.SummaryViewHolder>() {
 

@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import android.os.Bundle
 import android.view.LayoutInflater

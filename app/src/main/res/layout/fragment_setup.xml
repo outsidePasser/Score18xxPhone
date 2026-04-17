@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context="com.op.score18xxphone.SetupFragment">
+    tools:context="com.op.score18XXphone.SetupFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.op.score18xxphone
+package com.op.score18XXphone
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import com.op.score18xxphone.databinding.FragmentCompaniesBinding
+import com.op.score18XXphone.databinding.FragmentCompaniesBinding
 
 class CompaniesFragment : Fragment() {
     private var _binding: FragmentCompaniesBinding? = null

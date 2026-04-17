@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.op.score18xxphone"
+    namespace = "com.op.score18XXphone"
     compileSdk = 36
 
     defaultConfig {

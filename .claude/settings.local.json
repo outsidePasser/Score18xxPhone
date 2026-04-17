@@ -38,7 +38,9 @@
       "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1817/game.rb\" -o /tmp/1817_game.rb)",
       "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1817/round/operating.rb\")",
       "Bash(pip install *)",
-      "Bash(pip3 install *)"
+      "Bash(pip3 install *)",
+      "Bash(keytool *)",
+      "Bash(find C:/SoftwareDevelopment/Score18xxPhone/app/src -type f \\\\\\( -name \"*.kt\" -o -name \"*.xml\" \\\\\\) -exec sed -i 's/com\\\\.op\\\\.score18xxphone/com.op.score18XXphone/g' {} +)"
     ]
   }
 }

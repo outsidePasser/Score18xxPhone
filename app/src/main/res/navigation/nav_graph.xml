@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/setupFragment"
-        android:name="com.op.score18xxphone.SetupFragment"
+        android:name="com.op.score18XXphone.SetupFragment"
         android:label="Setup"
         tools:layout="@layout/fragment_setup" />
 
     <fragment
         android:id="@+id/companiesFragment"
-        android:name="com.op.score18xxphone.CompaniesFragment"
+        android:name="com.op.score18XXphone.CompaniesFragment"
         android:label="Favourites"
         tools:layout="@layout/fragment_companies" />
 
     <fragment
         android:id="@+id/albumsFragment"
-        android:name="com.op.score18xxphone.PlayersFragment"
+        android:name="com.op.score18XXphone.PlayersFragment"
         android:label="Players"
         tools:layout="@layout/fragment_players" />
 
     <fragment
         android:id="@+id/summaryFragment"
-        android:name="com.op.score18xxphone.SummaryFragment"
+        android:name="com.op.score18XXphone.SummaryFragment"
         android:label="Standings"
         tools:layout="@layout/fragment_summary" />
 
