@@ -4383,5 +4383,1575 @@
         "stockPrice": 0
       }
     ]
+  },
+  {
+    "title": "1824",
+    "fullName": "1824: Austrian-Hungarian Railway",
+    "companies": [
+      {
+        "name": "BH",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BK",
+        "color": "#025AAA",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CL",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MS",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SB",
+        "color": "#32763F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SD",
+        "color": "#F26722",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KK",
+        "color": "#7B5B2E",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "UG",
+        "color": "#FF69B4",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      170,
+      180,
+      190,
+      200,
+      210,
+      215,
+      220,
+      225,
+      235,
+      240,
+      250,
+      260,
+      270,
+      280,
+      290,
+      300,
+      310,
+      320,
+      330,
+      340,
+      350
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1836Jr56",
+    "fullName": "1836Jr56",
+    "companies": [
+      {
+        "name": "B",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GCL",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Nord",
+        "color": "#00008B",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NBDS",
+        "color": "#ffcd05",
+        "textColor": "#000000"
+      },
+      {
+        "name": "HSM",
+        "color": "#f26722",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NFL",
+        "color": "#90ee90",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MESS",
+        "color": "#ffffff",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      125,
+      150,
+      175,
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350,
+      375,
+      400,
+      425,
+      450
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1840",
+    "fullName": "1840: Vienna Tramways",
+    "companies": [
+      {
+        "name": "WT",
+        "color": "#1A1A18",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DT",
+        "color": "#AD4382",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SJE",
+        "color": "#2F2483",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BBG",
+        "color": "#FECC00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WKB",
+        "color": "#00963F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GW",
+        "color": "#E3000F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "W",
+        "color": "#A15E48",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "V",
+        "color": "#DAB06E",
+        "textColor": "#000000"
+      },
+      {
+        "name": "G",
+        "color": "#F58220",
+        "textColor": "#000000"
+      },
+      {
+        "name": "D",
+        "color": "#FFCB1C",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      140,
+      145,
+      150,
+      155,
+      160,
+      170,
+      180,
+      190,
+      200,
+      210,
+      220,
+      230,
+      240,
+      250,
+      265,
+      275,
+      290,
+      300,
+      320,
+      350,
+      380,
+      400
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "1841",
+    "fullName": "1841",
+    "companies": [
+      {
+        "name": "SSFL",
+        "color": "#7B2D8B",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "IRSFF",
+        "color": "#F26722",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SFTG",
+        "color": "#025AAA",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SFTN",
+        "color": "#F4A460",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SFTC",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SFMA",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SFLP",
+        "color": "#90EE90",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BAYARD",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "AFI",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ATFA",
+        "color": "#F26722",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CFCC",
+        "color": "#90EE90",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CGTF",
+        "color": "#32763F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CTDA",
+        "color": "#C0E955",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CTS",
+        "color": "#40E0D0",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ICSF",
+        "color": "#000080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "IFAI",
+        "color": "#EE82EE",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ILTF",
+        "color": "#FF69B4",
+        "textColor": "#000000"
+      },
+      {
+        "name": "RATF",
+        "color": "#E6E6FA",
+        "textColor": "#000000"
+      },
+      {
+        "name": "RSFS",
+        "color": "#FFE4C4",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CTLP",
+        "color": "#ffffff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "FTP",
+        "color": "#9A9A9A",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SLDV",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      8,
+      10,
+      12,
+      14,
+      17,
+      20,
+      24,
+      28,
+      33,
+      39,
+      46,
+      54,
+      64,
+      76,
+      90,
+      107,
+      126,
+      149,
+      176,
+      207,
+      245,
+      289,
+      341,
+      402
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1858",
+    "fullName": "1858: The Railways of Iberia",
+    "companies": [
+      {
+        "name": "A",
+        "color": "#3751dc",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "AVT",
+        "color": "#18a6d8",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MZA",
+        "color": "#fff114",
+        "textColor": "#000000"
+      },
+      {
+        "name": "N",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RP",
+        "color": "#e51f2e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "TBF",
+        "color": "#59227f",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "W",
+        "color": "#109538",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ZPB",
+        "color": "#ff7700",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "1858 India",
+    "fullName": "1858: The Railways of India",
+    "companies": [
+      {
+        "name": "ABR",
+        "color": "#ADD8E6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BBC",
+        "color": "#00008B",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BNR",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "EIR",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "EBR",
+        "color": "#7B5B2E",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GIP",
+        "color": "#F26722",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MSM",
+        "color": "#32763F",
+        "textColor": "#000000"
+      },
+      {
+        "name": "PNS",
+        "color": "#9A9A9A",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SIR",
+        "color": "#D1232A",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "1858 Switzerland",
+    "fullName": "1858: The Railways of Switzerland",
+    "companies": [
+      {
+        "name": "AB",
+        "color": "#32763F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "STB",
+        "color": "#025AAA",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RhB",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BLS",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MOB",
+        "color": "#8B4513",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SBB",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "1868 Wyoming",
+    "fullName": "1868: Boom and Bust in the Coal Mines and Oil Fields of Wyoming",
+    "companies": [
+      {
+        "name": "UP",
+        "color": "#006D9C",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DPR",
+        "color": "#4D2674",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BH",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "C&N",
+        "color": "#c00000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FE&MV",
+        "color": "#5E0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LNP",
+        "color": "#FFC425",
+        "textColor": "#000000"
+      },
+      {
+        "name": "OSL",
+        "color": "#492F24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RCL",
+        "color": "#FFFFFF",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WNW",
+        "color": "#004D95",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WYC",
+        "color": "#f58121",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      55,
+      60,
+      64,
+      68,
+      72,
+      76,
+      82,
+      90,
+      100,
+      110,
+      120,
+      140,
+      160,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350,
+      375,
+      400,
+      430,
+      460,
+      490,
+      525,
+      560
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1871",
+    "fullName": "The Old Prince 1871",
+    "companies": [
+      {
+        "name": "So",
+        "color": "#0a0a0a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "A",
+        "color": "#b58168",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MS",
+        "color": "#fcea18",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MR",
+        "color": "#37b2e2",
+        "textColor": "#000000"
+      },
+      {
+        "name": "S",
+        "color": "#7bb137",
+        "textColor": "#000000"
+      },
+      {
+        "name": "Gt",
+        "color": "#9a9a9d",
+        "textColor": "#000000"
+      },
+      {
+        "name": "C",
+        "color": "#a60a3d",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PEIR",
+        "color": "#ec767c",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CB",
+        "color": "#baa4cb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SB",
+        "color": "#bf4da5",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MB",
+        "color": "#0a70b3",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BB",
+        "color": "#eb6f0e",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WB",
+        "color": "#bdbd00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "HRB",
+        "color": "#008f4f",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      215,
+      230,
+      250,
+      270,
+      295,
+      320,
+      350,
+      380,
+      415,
+      450
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1873",
+    "fullName": "Harzbahn 1873",
+    "companies": [
+      {
+        "name": "HBE",
+        "color": "#FF0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GHE",
+        "color": "#326199",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NWE",
+        "color": "#A2A024",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SHE",
+        "color": "#FFFF00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "KEZ",
+        "color": "#2E270D",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WBE",
+        "color": "#959490",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "QLB",
+        "color": "#FF740E",
+        "textColor": "#000000"
+      },
+      {
+        "name": "U",
+        "color": "#950822",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HW",
+        "color": "#772500",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CO",
+        "color": "#16CE91",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SN",
+        "color": "#F7848D",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MO",
+        "color": "#448A28",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      70,
+      85,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      330,
+      360,
+      390,
+      420,
+      450,
+      490,
+      530,
+      570,
+      610,
+      650,
+      700,
+      750,
+      800,
+      850,
+      900,
+      950,
+      1000
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "1888",
+    "fullName": "1888",
+    "companies": [
+      {
+        "name": "JHR",
+        "color": "#C93A1E",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SSL",
+        "color": "#A7A6A6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CDL",
+        "color": "#44BC4F",
+        "textColor": "#000000"
+      },
+      {
+        "name": "HJR",
+        "color": "#CBA375",
+        "textColor": "#000000"
+      },
+      {
+        "name": "TJL",
+        "color": "#231F20",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LYR",
+        "color": "#FCC707",
+        "textColor": "#000000"
+      },
+      {
+        "name": "JZR",
+        "color": "#9D65B9",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ZDR",
+        "color": "#00ACD0",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LHR",
+        "color": "#9800FF",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "YTR",
+        "color": "#1240E4",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "XYR",
+        "color": "#FF0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HUN",
+        "color": "#9DFFFD",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WJR",
+        "color": "#983C3C",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HHR",
+        "color": "#98FF00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "HEN",
+        "color": "#FF98CE",
+        "textColor": "#000000"
+      },
+      {
+        "name": "XGY",
+        "color": "#FFE532",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      110,
+      120,
+      130,
+      145,
+      160,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      330,
+      360,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1893",
+    "fullName": "1893: Cologne",
+    "companies": [
+      {
+        "name": "DE",
+        "color": "#025AAA",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RSE",
+        "color": "#FF69B4",
+        "textColor": "#000000"
+      },
+      {
+        "name": "RAG",
+        "color": "#B3B3B3",
+        "textColor": "#000000"
+      },
+      {
+        "name": "AGV",
+        "color": "#32763F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HGK",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      195,
+      210,
+      230,
+      250,
+      270,
+      300,
+      330
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "1894",
+    "fullName": "1894",
+    "companies": [
+      {
+        "name": "Ouest",
+        "color": "#4682b4",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Nord",
+        "color": "#ff4040",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "AG",
+        "color": "#fcf75e",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CFOR",
+        "color": "#9c661f",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Belge",
+        "color": "#61b229",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PLM",
+        "color": "#dda0dd",
+        "textColor": "#000000"
+      },
+      {
+        "name": "Est",
+        "color": "#ff9966",
+        "textColor": "#000000"
+      },
+      {
+        "name": "LF",
+        "color": "#ffc0cb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "LB",
+        "color": "#c9c9c9",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      130,
+      140,
+      155,
+      170,
+      185,
+      200,
+      215,
+      235,
+      255,
+      280,
+      305,
+      335,
+      365,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18AL",
+    "fullName": "18AL",
+    "companies": [
+      {
+        "name": "L&N",
+        "color": "#025AAA",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "M&O",
+        "color": "#F26722",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WRA",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ATN",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ABC",
+        "color": "#32763F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "TAG",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      105,
+      120,
+      135,
+      150,
+      170,
+      190,
+      215,
+      240,
+      270,
+      300
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Ardennes",
+    "fullName": "18Ardennes: Rails Through the Ardennes",
+    "companies": [
+      {
+        "name": "BY",
+        "color": "#ADD8E6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "N",
+        "color": "#8B4513",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "E",
+        "color": "#F26722",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NL",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BE",
+        "color": "#006400",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "P",
+        "color": "#00008B",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      55,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      140,
+      160,
+      180,
+      200,
+      220,
+      240,
+      260,
+      280,
+      300,
+      320,
+      340,
+      360,
+      380,
+      400
+    ],
+    "operatingRounds": 2
+  },
+  {
+    "title": "18Carolinas",
+    "fullName": "18 Carolinas: Southern Steam to the Piedmont Plateau",
+    "companies": [
+      {
+        "name": "NCR",
+        "color": "#D1232A",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WM",
+        "color": "#FF1493",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WNC",
+        "color": "#F26722",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SR",
+        "color": "#32763F",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WW",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CSC",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SEA",
+        "color": "#00BFFF",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CAR",
+        "color": "#00008B",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      125,
+      140,
+      160,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Chesapeake",
+    "fullName": "18Chesapeake: The Birth of American Railroads",
+    "companies": [
+      {
+        "name": "PRR",
+        "color": "#237333",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PLE",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SRR",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "B&O",
+        "color": "#0189d1",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "C&O",
+        "color": "#a2dced",
+        "textColor": "#000000"
+      },
+      {
+        "name": "LV",
+        "color": "#FFF500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "C&A",
+        "color": "#f48221",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "N&W",
+        "color": "#7b352a",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      125,
+      130,
+      140,
+      145,
+      160,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350,
+      375
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18CO",
+    "fullName": "18CO: Rock & Stock",
+    "companies": [
+      {
+        "name": "KPAC",
+        "color": "#7b352a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CM",
+        "color": "#a2dced",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CS",
+        "color": "#232b2b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DPAC",
+        "color": "#82009c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DSL",
+        "color": "#237333",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DRG",
+        "color": "#FFD700",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ATSF",
+        "color": "#000e4b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CBQ",
+        "color": "#f48221",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ROCK",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "UP",
+        "color": "#ffffeb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DSNG",
+        "color": "#db00c0",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      75,
+      85,
+      90,
+      95,
+      100,
+      110,
+      115,
+      120,
+      125,
+      130,
+      135,
+      145,
+      150,
+      155,
+      160,
+      165,
+      170,
+      175,
+      190,
+      195,
+      205,
+      215,
+      220,
+      225,
+      240,
+      245,
+      250,
+      265,
+      275,
+      280,
+      290,
+      305,
+      315,
+      320,
+      335,
+      350,
+      355,
+      370,
+      385,
+      395,
+      425,
+      440,
+      485
+    ],
+    "operatingRounds": 2
   }
 ]

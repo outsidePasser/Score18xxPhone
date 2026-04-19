@@ -3,7 +3,6 @@
     <string name="menu_setup">Setup</string>
     <string name="menu_companies">Companies</string>
     <string name="menu_players">Players</string>
-    <string name="menu_score_sheet">Score sheet</string>
     <string name="stock">Stock</string>
     <string name="run_1">Run 1</string>
     <string name="run_2">Run 2</string>
@@ -12,7 +11,6 @@
     <string name="final_stock_price">Final Stock Price</string>
     <string name="game">Game</string>
     <string name="players">Players</string>
-    <string name="add_player">Add Player</string>
     <string name="player">Player</string>
     <string name="run">Run</string>
     <string name="_1">1</string>
@@ -31,8 +29,6 @@
     <string name="shares">Shares</string>
     <string name="menu_summary">Standings</string>
     <string name="cash">Cash</string>
-    <string name="add_new_player">Add New Player</string>
-    <string name="remove_player_prompt">Remove %s?</string>
     <string name="run_input_label">payout/share for run %d</string>
     <string name="other_assets">Other Assets</string>
     <string name="other_assets_label">Other Assets (minors, privates, etc.)</string>

@@ -39,13 +39,13 @@
             android:paddingBottom="12dp" />
 
         <com.google.android.material.chip.ChipGroup
-            android:id="@+id/player_chip_group"
+            android:id="@+id/playerChipGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingBottom="8dp" />
 
         <LinearLayout
-            android:id="@+id/add_player_row"
+            android:id="@+id/addPlayerRow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -53,7 +53,7 @@
             android:layout_marginTop="8dp">
 
             <EditText
-                android:id="@+id/player_name_input"
+                android:id="@+id/playerNameInput"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_weight="1"
@@ -69,7 +69,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/add_player_button"
+                android:id="@+id/addPlayerButton"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="8dp"
