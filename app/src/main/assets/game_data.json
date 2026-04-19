@@ -5953,5 +5953,2962 @@
       485
     ],
     "operatingRounds": 2
+  },
+  {
+    "title": "18CZ",
+    "fullName": "18CZ",
+    "companies": [
+      {
+        "name": "SX",
+        "color": "#e31e24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PR",
+        "color": "#2b2a29",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BY",
+        "color": "#0971b7",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "kk",
+        "color": "#cc6f3c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Ug",
+        "color": "#ae4a84",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BN",
+        "color": "#a9a9a9",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NWB",
+        "color": "#e1af33",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ATE",
+        "color": "#ffd700",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BTE",
+        "color": "#dbe285",
+        "textColor": "#000000"
+      },
+      {
+        "name": "KFN",
+        "color": "#a2d9f7",
+        "textColor": "#000000"
+      },
+      {
+        "name": "EKJ",
+        "color": "#faebd7",
+        "textColor": "#000000"
+      },
+      {
+        "name": "OFE",
+        "color": "#f3b1b3",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BCB",
+        "color": "#fabc48",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MW",
+        "color": "#b1cec7",
+        "textColor": "#000000"
+      },
+      {
+        "name": "VBW",
+        "color": "#009846",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      45,
+      50,
+      53,
+      55,
+      58,
+      60,
+      63,
+      65,
+      68,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      126,
+      132,
+      138,
+      144,
+      151,
+      158,
+      165,
+      172,
+      180,
+      188,
+      196,
+      204,
+      213,
+      222,
+      231,
+      240,
+      250,
+      260,
+      275,
+      290,
+      305,
+      320,
+      335,
+      350,
+      370
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18ESP",
+    "fullName": "18ESP",
+    "companies": [
+      {
+        "name": "N",
+        "color": "#c29137",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MZA",
+        "color": "#ffd526",
+        "textColor": "#000000"
+      },
+      {
+        "name": "A",
+        "color": "#b75835",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CRB",
+        "color": "#e96b28",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MCP",
+        "color": "#009ad5",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ZPB",
+        "color": "#da0a26",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FdSB",
+        "color": "#009ad5",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CFEA",
+        "color": "#e96b28",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CFLG",
+        "color": "#da0a26",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FdLR",
+        "color": "#009141",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MS",
+        "color": "#7dcce5",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CM",
+        "color": "#009141",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SC",
+        "color": "#fff014",
+        "textColor": "#000000"
+      },
+      {
+        "name": "AC",
+        "color": "#b75835",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MZ",
+        "color": "#7e7f7e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ZP",
+        "color": "#d90072",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      126,
+      132,
+      138,
+      144,
+      151,
+      158,
+      165,
+      172,
+      180,
+      188,
+      196,
+      204,
+      213,
+      222,
+      231,
+      240,
+      250,
+      260,
+      270,
+      280,
+      295,
+      310,
+      325,
+      340,
+      360,
+      380,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18EU",
+    "fullName": "18EU",
+    "companies": [
+      {
+        "name": "BNR",
+        "color": "#ffcb05",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DR",
+        "color": "#fff200",
+        "textColor": "#000000"
+      },
+      {
+        "name": "FS",
+        "color": "#00a651",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RBSR",
+        "color": "#8ed8f8",
+        "textColor": "#000000"
+      },
+      {
+        "name": "RPR",
+        "color": "#00a4e4",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "AIRS",
+        "color": "#fffcd5",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SNCF",
+        "color": "#ed1c24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GSR",
+        "color": "#231f20",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      60,
+      65,
+      70,
+      75,
+      82,
+      90,
+      100,
+      110,
+      122,
+      135,
+      150,
+      165,
+      180,
+      200,
+      225,
+      245,
+      270,
+      300,
+      330,
+      360,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18FL",
+    "fullName": "18FL",
+    "companies": [
+      {
+        "name": "LN",
+        "color": "#00008b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Plant",
+        "color": "#00bfff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SR",
+        "color": "#76a042",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SAL",
+        "color": "#f48221",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ACL",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FECR",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      125,
+      140,
+      160,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      330,
+      360,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18GA",
+    "fullName": "18GA: The Railroads Come to Georgia",
+    "companies": [
+      {
+        "name": "ACL",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CoG",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "G&F",
+        "color": "#00bfff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "GA",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "W&A",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SAL",
+        "color": "#ffd700",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      170,
+      190,
+      210,
+      230,
+      250,
+      275,
+      300
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18GB",
+    "fullName": "18GB",
+    "companies": [
+      {
+        "name": "CR",
+        "color": "#0a70b3",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GER",
+        "color": "#37b2e2",
+        "textColor": "#000000"
+      },
+      {
+        "name": "GSWR",
+        "color": "#ec767c",
+        "textColor": "#000000"
+      },
+      {
+        "name": "GWR",
+        "color": "#008f4f",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LNWR",
+        "color": "#0a0a0a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LSWR",
+        "color": "#fcea18",
+        "textColor": "#000000"
+      },
+      {
+        "name": "LYR",
+        "color": "#baa4cb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MR",
+        "color": "#dd0030",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MSLR",
+        "color": "#881a1e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NBR",
+        "color": "#eb6f0e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NER",
+        "color": "#7bb137",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SWR",
+        "color": "#9a9a9d",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      115,
+      130,
+      145,
+      160,
+      180,
+      200,
+      220,
+      240,
+      265,
+      290,
+      320,
+      350,
+      380
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18 Hiawatha",
+    "fullName": "18 Hiawatha",
+    "companies": [
+      {
+        "name": "DL&W",
+        "color": "#984573",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "J",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "GT",
+        "color": "#e48329",
+        "textColor": "#000000"
+      },
+      {
+        "name": "H",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ME",
+        "color": "#ffdea8",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NYOW",
+        "color": "#0095da",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NYSW",
+        "color": "#fff36b",
+        "textColor": "#000000"
+      },
+      {
+        "name": "PSNR",
+        "color": "#0a884b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PLE",
+        "color": "#00afad",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PW",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "R",
+        "color": "#165633",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "UR",
+        "color": "#003d84",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300,
+      330,
+      360,
+      400,
+      440,
+      490
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18 India",
+    "fullName": "18 India",
+    "companies": [
+      {
+        "name": "GIPR",
+        "color": "#ffffff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NWR",
+        "color": "#48bc39",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "EIR",
+        "color": "#f14324",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NCR",
+        "color": "#d8ba9e",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MR",
+        "color": "#fccd1c",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SIR",
+        "color": "#702f2b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BNR",
+        "color": "#c4711c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CGR",
+        "color": "#967ac4",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PNS",
+        "color": "#9fc322",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WIP",
+        "color": "#f24780",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "EBR",
+        "color": "#72818e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BR",
+        "color": "#6046a6",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NSR",
+        "color": "#458dd3",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "TR",
+        "color": "#100e0d",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SPD",
+        "color": "#c3b07a",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DHR",
+        "color": "#2c8e48",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WR",
+        "color": "#3766ba",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KGF",
+        "color": "#da193a",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      56,
+      58,
+      61,
+      64,
+      67,
+      71,
+      76,
+      82,
+      90,
+      100,
+      112,
+      126,
+      142,
+      160,
+      180,
+      205,
+      230,
+      255,
+      280,
+      300,
+      320,
+      340,
+      360,
+      380,
+      400,
+      420,
+      440,
+      460
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Ireland",
+    "fullName": "18Ireland",
+    "companies": [
+      {
+        "name": "GSWR",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GNRI",
+        "color": "#3daad6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DSER",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MGWR",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MRNCC",
+        "color": "#db7093",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WLWR",
+        "color": "#ffff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CBSCR",
+        "color": "#a52a2a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LER",
+        "color": "#8b4513",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CBPR",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "EBSR",
+        "color": "#f5deb3",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SLNCR",
+        "color": "#808080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DDR",
+        "color": "#98fb98",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DKR",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GJR",
+        "color": "#ffffff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "UR",
+        "color": "#ff7f50",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DER",
+        "color": "#ffc0cb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "GNWR",
+        "color": "#9370db",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WKR",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CIR",
+        "color": "#556b2f",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KJR",
+        "color": "#dda0dd",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WLR",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      20,
+      24,
+      30,
+      38,
+      50,
+      55,
+      58,
+      60,
+      62,
+      64,
+      65,
+      66,
+      68,
+      70,
+      72,
+      76,
+      78,
+      80,
+      84,
+      85,
+      86,
+      88,
+      92,
+      94,
+      95,
+      96,
+      100,
+      102,
+      104,
+      106,
+      110,
+      112,
+      114,
+      122,
+      124,
+      125,
+      134,
+      136,
+      138,
+      148,
+      150,
+      170,
+      172,
+      196,
+      198,
+      225,
+      260
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18JP-T",
+    "fullName": "18JP-T: Railroading in Japan",
+    "companies": [
+      {
+        "name": "TR",
+        "color": "#808080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SER",
+        "color": "#ffff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "OER",
+        "color": "#006400",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KC",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "TC",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "KEER",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KER",
+        "color": "#ffc0cb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "TM",
+        "color": "#a52a2a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SAR",
+        "color": "#90ee90",
+        "textColor": "#000000"
+      },
+      {
+        "name": "TX",
+        "color": "#ffa500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "HR",
+        "color": "#00008b",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      140,
+      170,
+      200,
+      230,
+      260,
+      290,
+      320,
+      350,
+      380,
+      420,
+      460
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18 Los Angeles",
+    "fullName": "18 Los Angeles: Railroading in the City of Angels 2nd Edition",
+    "companies": [
+      {
+        "name": "ELA",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LA",
+        "color": "#00830e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LAIR",
+        "color": "#b8ffff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "PER",
+        "color": "#ff6a00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SF",
+        "color": "#ff7fed",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SP",
+        "color": "#0026ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "UP",
+        "color": "#727272",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      112,
+      124,
+      137,
+      150,
+      165,
+      180,
+      195,
+      212,
+      230,
+      250,
+      270,
+      295,
+      320,
+      345,
+      375,
+      405,
+      440,
+      475,
+      510,
+      550
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18MEX",
+    "fullName": "18MEX",
+    "companies": [
+      {
+        "name": "CHI",
+        "color": "#ff4136",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NdM",
+        "color": "#00ac00",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MC",
+        "color": "#232b2b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FCP",
+        "color": "#fff128",
+        "textColor": "#000000"
+      },
+      {
+        "name": "TM",
+        "color": "#ffc502",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MEX",
+        "color": "#a9a9a9",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SPM",
+        "color": "#0080ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "UdY",
+        "color": "#8b008b",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      165,
+      180,
+      200
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18MO",
+    "fullName": "1852: Missouri",
+    "companies": [
+      {
+        "name": "ATSF",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CBQ",
+        "color": "#808080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MKT",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MP",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RI",
+        "color": "#a52a2a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SLSF",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SSW",
+        "color": "#00008b",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      112,
+      124,
+      137,
+      150,
+      165,
+      180,
+      195,
+      212,
+      230,
+      250,
+      270,
+      295,
+      320,
+      345,
+      375,
+      405,
+      440,
+      475,
+      510,
+      550
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18MS",
+    "fullName": "18MS",
+    "companies": [
+      {
+        "name": "GMO",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "IC",
+        "color": "#397641",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "L&N",
+        "color": "#0d5ba5",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Fr",
+        "color": "#ed1c24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WRA",
+        "color": "#c7c4e2",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      45,
+      50,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      130,
+      150,
+      170,
+      200,
+      230,
+      265,
+      300
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18MT",
+    "fullName": "18MT: Big Sky Barons",
+    "companies": [
+      {
+        "name": "NP",
+        "color": "#20451d",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MC",
+        "color": "#754d24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GN",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MILW",
+        "color": "#919191",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MR",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CBQ",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "UP",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MWS",
+        "color": "#ffffff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BAP",
+        "color": "#000000",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      100,
+      105,
+      115,
+      125,
+      130,
+      135,
+      145,
+      150,
+      160,
+      170,
+      175,
+      185,
+      195,
+      205,
+      215,
+      220,
+      240,
+      245,
+      265,
+      270,
+      275,
+      290,
+      305,
+      310,
+      320,
+      335,
+      345,
+      350,
+      370,
+      385,
+      390,
+      425,
+      435,
+      485
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Neb",
+    "fullName": "18Neb",
+    "companies": [
+      {
+        "name": "CBQ",
+        "color": "#666666",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CNW",
+        "color": "#2c9846",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "C&S",
+        "color": "#ae4a84",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DRG",
+        "color": "#d4af37",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MP",
+        "color": "#874301",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "UP",
+        "color": "#376fff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NK",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "OLB",
+        "color": "#f40003",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      30,
+      40,
+      50,
+      60,
+      65,
+      70,
+      75,
+      82,
+      90,
+      100,
+      110,
+      122,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300,
+      330,
+      360,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18NewEngland",
+    "fullName": "18NewEngland",
+    "companies": [
+      {
+        "name": "B&A",
+        "color": "#ec1c24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "B&M",
+        "color": "#84c77a",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CN",
+        "color": "#ffd900",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CVT",
+        "color": "#b43e95",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "D&H",
+        "color": "#0d7bb5",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NYC",
+        "color": "#231f20",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NYNHH",
+        "color": "#f68e1e",
+        "textColor": "#000000"
+      },
+      {
+        "name": "P&W",
+        "color": "#833000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "AWS",
+        "color": "#f05f72",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BL",
+        "color": "#fbb116",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BP",
+        "color": "#bdaf32",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CR",
+        "color": "#584232",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CV",
+        "color": "#e5df17",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ER",
+        "color": "#b43e95",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FRR",
+        "color": "#2ab24b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GR",
+        "color": "#09743b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HNH",
+        "color": "#ec2785",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HRR",
+        "color": "#3b60ab",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NLN",
+        "color": "#6dcef5",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NYNH",
+        "color": "#cf6d28",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NYW",
+        "color": "#ec1e29",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PE",
+        "color": "#b94e27",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WNR",
+        "color": "#231f20",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      145,
+      160,
+      180,
+      200,
+      220,
+      240,
+      260,
+      280,
+      310,
+      340,
+      380,
+      420,
+      460,
+      500
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18NL",
+    "fullName": "18NL",
+    "companies": [
+      {
+        "name": "AS",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NCS",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DV",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MES",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "HIS",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NZO",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ZHE",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NRS",
+        "color": "#000000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NFL",
+        "color": "#000000",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      18,
+      20,
+      25,
+      27,
+      30,
+      32,
+      34,
+      36,
+      39,
+      40,
+      41,
+      42,
+      45,
+      46,
+      48,
+      50,
+      53,
+      54,
+      55,
+      58,
+      60,
+      62,
+      63,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      75,
+      76,
+      80,
+      82,
+      90,
+      100,
+      110,
+      111,
+      112,
+      120,
+      125,
+      126,
+      130,
+      140,
+      142,
+      155,
+      160,
+      170,
+      180,
+      185,
+      200,
+      220,
+      225,
+      240,
+      250,
+      260,
+      275,
+      280,
+      300,
+      325,
+      350
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Norway",
+    "fullName": "18Norway",
+    "companies": [
+      {
+        "name": "H",
+        "color": "#32763f",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "D",
+        "color": "#025aaa",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "B",
+        "color": "#d1232a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "R",
+        "color": "#474548",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "S",
+        "color": "#fff500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "J",
+        "color": "#d88e39",
+        "textColor": "#000000"
+      },
+      {
+        "name": "V",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "Ø",
+        "color": "#95c054",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NSB",
+        "color": "#d7555f",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      112,
+      124,
+      137,
+      150,
+      165,
+      180,
+      195,
+      220,
+      245,
+      270,
+      300,
+      330,
+      365,
+      400,
+      440,
+      480
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18NY",
+    "fullName": "18NY",
+    "companies": [
+      {
+        "name": "1",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "2",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "3",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "4",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "5",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "6",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "7",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "8",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "9",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "10",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "11",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "D&H",
+        "color": "#2e3192",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RWO",
+        "color": "#07733d",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NY&H",
+        "color": "#8c4776",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NH",
+        "color": "#e96b21",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ERIE",
+        "color": "#fff200",
+        "textColor": "#000000"
+      },
+      {
+        "name": "B&A",
+        "color": "#e21f27",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HR",
+        "color": "#8dd8f8",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NYC",
+        "color": "#231f20",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      125,
+      150,
+      175,
+      200,
+      230,
+      260,
+      300,
+      350,
+      400,
+      450,
+      500
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18OE",
+    "fullName": "18OE",
+    "companies": [
+      {
+        "name": "A",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "B",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "C",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "D",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "E",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "F",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "G",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "H",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "J",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "K",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "L",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "M",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LNWR",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GWR",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GSWR",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PLM",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MIDI",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "OU",
+        "color": "#ffa500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "BEL",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BHB",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "POB",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KSS",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KBS",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SB",
+        "color": "#ffa500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MAV",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SFAI",
+        "color": "#d2b48c",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SFR",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CHN",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MZA",
+        "color": "#ffff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "RCP",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MSP",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MKV",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LRZD",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WW",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "DSJ",
+        "color": "#808080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BJV",
+        "color": "#a52a2a",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      225,
+      250,
+      280,
+      310,
+      350,
+      390,
+      440,
+      490,
+      550
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Rhl",
+    "fullName": "18Rhl",
+    "companies": [
+      {
+        "name": "ADR",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BME",
+        "color": "#a52a2a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CME",
+        "color": "#cd5c5c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "DEE",
+        "color": "#ffff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "KEG",
+        "color": "#ffa500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "GVE",
+        "color": "#808080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CCE",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RhE",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      240,
+      265,
+      290,
+      320,
+      350
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18RoyalGorge",
+    "fullName": "18RoyalGorge",
+    "companies": [
+      {
+        "name": "RG",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SF",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KP",
+        "color": "#808080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SPP",
+        "color": "#ffa500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "PAV",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NO",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CM",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "S",
+        "color": "#ffffff",
+        "textColor": "#000000"
+      },
+      {
+        "name": "FCC",
+        "color": "#ffff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "CSCC",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CS",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      145,
+      160,
+      180,
+      200,
+      220,
+      240,
+      260,
+      280,
+      310,
+      340,
+      380,
+      420,
+      460
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18SJ",
+    "fullName": "18SJ",
+    "companies": [
+      {
+        "name": "BJ",
+        "color": "#7b352a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KFJ",
+        "color": "#ffc0cb",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MYJ",
+        "color": "#fff500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "MÖJ",
+        "color": "#40e0d0",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SNJ",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "STJ",
+        "color": "#0a0a0a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SWB",
+        "color": "#237333",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "TGOJ",
+        "color": "#f48221",
+        "textColor": "#000000"
+      },
+      {
+        "name": "UGJ",
+        "color": "#00ff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ÖKJ",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ÖSJ",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      63,
+      65,
+      67,
+      71,
+      76,
+      82,
+      90,
+      100,
+      110,
+      120,
+      125,
+      140,
+      155,
+      160,
+      170,
+      180,
+      185,
+      200,
+      220,
+      225,
+      240,
+      250,
+      260,
+      275,
+      280,
+      300,
+      325,
+      350,
+      375,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Texas",
+    "fullName": "18Texas",
+    "companies": [
+      {
+        "name": "T&P",
+        "color": "#8b008b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MKT",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SP",
+        "color": "#ffa500",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MP",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SSW",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SAA",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      60,
+      65,
+      70,
+      75,
+      82,
+      90,
+      100,
+      110,
+      122,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300,
+      330,
+      360,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18TN",
+    "fullName": "18TN",
+    "companies": [
+      {
+        "name": "SR",
+        "color": "#ffff00",
+        "textColor": "#008000"
+      },
+      {
+        "name": "GMO",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "L&N",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "IC",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NC&StL",
+        "color": "#ffa500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "TC",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      150,
+      170,
+      190,
+      210,
+      230,
+      250,
+      275,
+      300
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Tokaido",
+    "fullName": "18Tokaido",
+    "companies": [
+      {
+        "name": "YSL",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SRC",
+        "color": "#7b352a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KAN",
+        "color": "#237333",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "ARC",
+        "color": "#fff500",
+        "textColor": "#000000"
+      },
+      {
+        "name": "NRC",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SHI",
+        "color": "#0189d1",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NAN",
+        "color": "#a2dced",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      125,
+      130,
+      140,
+      145,
+      160,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350,
+      375
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18Uruguay",
+    "fullName": "18Uruguay",
+    "companies": [
+      {
+        "name": "FCE",
+        "color": "#025aaa",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RPTLA",
+        "color": "#ff0000",
+        "textColor": "#000000"
+      },
+      {
+        "name": "FCCU",
+        "color": "#1a1919",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FCNE",
+        "color": "#fff104",
+        "textColor": "#000000"
+      },
+      {
+        "name": "WER",
+        "color": "#f47d20",
+        "textColor": "#000000"
+      },
+      {
+        "name": "FCNO",
+        "color": "#12a969",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FCMU",
+        "color": "#e1ad01",
+        "textColor": "#000000"
+      },
+      {
+        "name": "EER",
+        "color": "#772c7b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "FCNU",
+        "color": "#0189c4",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PTC",
+        "color": "#fad5e4",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ECR",
+        "color": "#43c6db",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      20,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      120,
+      125,
+      130,
+      140,
+      150,
+      160,
+      175,
+      180,
+      200,
+      225,
+      250,
+      275,
+      300,
+      325,
+      350,
+      375,
+      400,
+      425,
+      450
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "18VA",
+    "fullName": "18VA",
+    "companies": [
+      {
+        "name": "B&O",
+        "color": "#025aaa",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "C&O",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SR",
+        "color": "#76a042",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "N&W",
+        "color": "#7b352a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "WMR",
+        "color": "#f48221",
+        "textColor": "#000000"
+      },
+      {
+        "name": "RFPR",
+        "color": "#d81e3e",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "VR",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      60,
+      65,
+      70,
+      75,
+      82,
+      90,
+      100,
+      110,
+      122,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300,
+      330,
+      360,
+      400
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "21Moon",
+    "fullName": "21Moon",
+    "companies": [
+      {
+        "name": "SSF",
+        "color": "#f7955b",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SWP",
+        "color": "#00aeef",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HMQ",
+        "color": "#ed1c24",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "VH",
+        "color": "#ffcc4e",
+        "textColor": "#000000"
+      },
+      {
+        "name": "ITC",
+        "color": "#a368ab",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "LG",
+        "color": "#57bd7d",
+        "textColor": "#000000"
+      },
+      {
+        "name": "KR",
+        "color": "#b59588",
+        "textColor": "#ffffff"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      175,
+      190,
+      195,
+      200,
+      215,
+      220,
+      235,
+      240,
+      250,
+      260,
+      265,
+      275,
+      285,
+      295,
+      300,
+      315,
+      325,
+      330,
+      345,
+      360,
+      395,
+      430
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "Steam Over Holland",
+    "fullName": "Steam Over Holland",
+    "companies": [
+      {
+        "name": "NBD",
+        "color": "#0000ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "HYSM",
+        "color": "#008000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NRS",
+        "color": "#ffff00",
+        "textColor": "#000000"
+      },
+      {
+        "name": "OSM",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "AR",
+        "color": "#ff0000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NCS",
+        "color": "#800080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "NSM",
+        "color": "#ffffff",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      90,
+      100,
+      110,
+      125,
+      140,
+      160,
+      180,
+      210,
+      240,
+      270,
+      300,
+      330,
+      360
+    ],
+    "operatingRounds": 3
   }
 ]

@@ -33,7 +33,7 @@ object Games {
         val jsonString = application.assets.open("game_data.json").bufferedReader().use { it.readText() }
         val gson = Gson()
         val listType: Type = object : TypeToken<List<Game>>() {}.type
-        games = gson.fromJson(jsonString, listType)
+        games = (gson.fromJson(jsonString, listType) as List<Game>).sortedBy { it.title }
 
         games.forEach { game ->
             game.companies.forEach { company ->
