@@ -1,7 +1,7 @@
 [
   {
     "title": "1804",
-    "fullName": "1804",
+    "fullName": "1804: American Political Landscape",
     "companies": [
       {
         "name": "AC",
@@ -2488,7 +2488,7 @@
   },
   {
     "title": "1849BOOT",
-    "fullName": "1849BOOT",
+    "fullName": "1849: Kingdom of the Two Sicilies",
     "companies": [
       {
         "name": "SFR",
@@ -3772,26 +3772,66 @@
   },
   {
     "title": "1877",
-    "fullName": "1877",
+    "fullName": "1877: Venezuela",
     "companies": [
       {
+        "name": "BPC",
+        "color": "#1e90ff",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "BSC",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
         "name": "Cap",
-        "color": "#FFD700",
-        "textColor": "#000000"
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "CLG",
+        "color": "#ff1493",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "E&M",
+        "color": "#8b008b",
+        "textColor": "#ffffff"
       },
       {
         "name": "FCC",
-        "color": "#EF4223",
+        "color": "#ef4223",
         "textColor": "#ffffff"
       },
       {
         "name": "LESJ",
-        "color": "#F2A847",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "M&M",
+        "color": "#8b4513",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "PCB",
+        "color": "#006400",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Sans",
+        "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SMB",
+        "color": "#c0c0c0",
         "textColor": "#000000"
       },
       {
         "name": "TCM",
-        "color": "#16190E",
+        "color": "#16190e",
         "textColor": "#ffffff"
       }
     ],
@@ -3830,7 +3870,7 @@
   },
   {
     "title": "1877STOCKHOLMTRAMWAYS",
-    "fullName": "1877STOCKHOLMTRAMWAYS",
+    "fullName": "1877: Stockholm Tramways",
     "companies": [
       {
         "name": "SS",
@@ -7746,7 +7786,7 @@
         "textColor": "#000000"
       },
       {
-        "name": "Ø",
+        "name": "ÃƒËœ",
         "color": "#95c054",
         "textColor": "#000000"
       },
@@ -8316,7 +8356,7 @@
         "textColor": "#000000"
       },
       {
-        "name": "MÖJ",
+        "name": "MÃƒâ€“J",
         "color": "#40e0d0",
         "textColor": "#000000"
       },
@@ -8346,12 +8386,12 @@
         "textColor": "#000000"
       },
       {
-        "name": "ÖKJ",
+        "name": "Ãƒâ€“KJ",
         "color": "#800080",
         "textColor": "#ffffff"
       },
       {
-        "name": "ÖSJ",
+        "name": "Ãƒâ€“SJ",
         "color": "#d81e3e",
         "textColor": "#ffffff"
       }
@@ -8908,6 +8948,169 @@
       300,
       330,
       360
+    ],
+    "operatingRounds": 3
+  },
+  {
+    "title": "1861",
+    "fullName": "1861: The Railways of the Russian Empire",
+    "companies": [
+      {
+        "name": "NW",
+        "color": "#000080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SW",
+        "color": "#d75500",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SE",
+        "color": "#772282",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MVR",
+        "color": "#808000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MK",
+        "color": "#7b352a",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "GRR",
+        "color": "#ef4223",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MKN",
+        "color": "#0189d1",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MKV",
+        "color": "#3c7b5c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RO",
+        "color": "#009595",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KB",
+        "color": "#4cb5d2",
+        "textColor": "#000000"
+      },
+      {
+        "name": "OK",
+        "color": "#0097df",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KK",
+        "color": "#0097df",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SPW",
+        "color": "#0189d1",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MB",
+        "color": "#000080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "KR",
+        "color": "#772282",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "N",
+        "color": "#d30869",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "Y",
+        "color": "#f3716d",
+        "textColor": "#000000"
+      },
+      {
+        "name": "M-K",
+        "color": "#d75500",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MNN",
+        "color": "#ef4223",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "MV",
+        "color": "#b7274c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "V",
+        "color": "#7c7b8c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "TR",
+        "color": "#7c7b8c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SV",
+        "color": "#7c7b8c",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "E",
+        "color": "#000080",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "RSR",
+        "color": "#fffdd0",
+        "textColor": "#000000"
+      }
+    ],
+    "maxSharesPerPlayer": 10,
+    "stockPrices": [
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      80,
+      90,
+      100,
+      110,
+      120,
+      135,
+      150,
+      165,
+      180,
+      200,
+      220,
+      245,
+      270,
+      300,
+      330,
+      360,
+      400,
+      440,
+      490,
+      540
     ],
     "operatingRounds": 3
   }
