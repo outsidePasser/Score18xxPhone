@@ -70,7 +70,8 @@
       "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1852/meta.rb\")",
       "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1893/meta.rb\")",
       "Bash(curl -s \"https://raw.githubusercontent.com/tobymao/18xx/master/lib/engine/game/g_1894/meta.rb\")",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(find C:/SoftwareDevelopment/Score18xxPhone/app/src/main/res/mipmap-* -type f)"
     ]
   }
 }
