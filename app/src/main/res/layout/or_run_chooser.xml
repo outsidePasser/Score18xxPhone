@@ -17,7 +17,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="5"
-            android:background="@color/black"
             android:gravity="end"
             android:textColor="@color/white"
             android:textSize="20sp" />
@@ -37,7 +36,6 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_weight="9"
-            android:background="@color/black"
             android:gravity="start|center_vertical"
             android:text="@string/run"
             android:textColor="@color/white"

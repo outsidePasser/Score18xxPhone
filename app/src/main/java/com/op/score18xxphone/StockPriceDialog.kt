@@ -1,7 +1,6 @@
 package com.op.score18XXphone
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
@@ -46,7 +45,7 @@ class StockPriceDialog(context: Context, company: Company) {
                     }
                     else -> {
                         priceView.text = ""
-                        priceView.setBackgroundColor(Color.BLACK)
+                        priceView.background = null
                     }
                 }
             }

@@ -31,6 +31,5 @@
     <string name="cash">Cash</string>
     <string name="run_input_label">payout/share for run %d</string>
     <string name="other_assets">Other Assets</string>
-    <string name="other_assets_label">Other Assets (minors, privates, etc.)</string>
     <string name="add_player_button">+</string>
 </resources>

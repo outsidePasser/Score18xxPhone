@@ -25,7 +25,7 @@ class SummaryAdapter : RecyclerView.Adapter<SummaryAdapter.SummaryViewHolder>() 
         val game = games[currentGameIndex]
         return Players.players
             .mapIndexed { playerIndex, player ->
-                val totalValue = player.cash + game.companies.sumOf { company ->
+                val totalValue = player.cash + player.otherAssets + game.companies.sumOf { company ->
                     val shareCount = company.shares.getOrElse(playerIndex) { 0 }
                     val shareValue = company.stockPrice + company.runs.take(game.operatingRounds).sum().toDouble()
                     (shareCount * shareValue).toInt()

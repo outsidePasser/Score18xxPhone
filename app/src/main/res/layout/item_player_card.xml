@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
 
-        <!-- Cash and Shares in the same row, flat structure to avoid nested weights -->
+        <!-- Cash and Shares row -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -56,10 +56,9 @@
                 android:id="@+id/player_card_cash"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:paddingStart="0dp"
-                android:paddingEnd="16dp"
                 android:background="@drawable/rounded_corner_dark_gray"
                 android:gravity="center"
                 android:textColor="@color/white"
@@ -82,42 +81,9 @@
                 android:id="@+id/player_card_total_shares"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
                 android:paddingTop="3dp"
                 android:paddingBottom="3dp"
-                android:paddingStart="0dp"
-                android:paddingEnd="16dp"
-                android:background="@drawable/rounded_corner_dark_gray"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            android:baselineAligned="false"
-            android:gravity="center_vertical"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingTop="3dp"
-            android:paddingBottom="3dp">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginEnd="10dp"
-                android:gravity="center_vertical"
-                android:text="@string/other_assets_label"
-                android:textColor="@color/white"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/player_card_other_assets"
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
                 android:background="@drawable/rounded_corner_dark_gray"
                 android:gravity="center"
                 android:textColor="@color/white"
