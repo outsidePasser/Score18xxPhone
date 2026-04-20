@@ -79,4 +79,5 @@ dependencies {
     androidTestImplementation(libs.androidx.navigation.testing)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.cardview)
+    implementation(libs.androidx.viewpager2)
 }

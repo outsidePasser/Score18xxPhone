@@ -27,7 +27,7 @@ class CashInputDialog(context: Context, playerName: String, label: String, initi
 
         picker.findViewById<TextView>(R.id.run_input_run_number).text = label
 
-        cashDisplay = picker.findViewById<TextView>(R.id.run_display)
+        cashDisplay = picker.findViewById(R.id.run_display)
         if (initialValue != 0) {
             currentInput = initialValue.toString()
             cashDisplay.text = currentInput
