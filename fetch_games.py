@@ -15,19 +15,104 @@ import os
 
 GITHUB_RAW = "https://raw.githubusercontent.com/tobymao/18xx/master"
 
-# Named colors used occasionally in the Ruby source
+# Named colors used in the Ruby source. Hex values for the 18xx-specific names come
+# from assets/app/lib/hex.rb; all others use standard CSS named-color values.
 NAMED_COLORS = {
-    'white': '#ffffff',
-    'black': '#000000',
-    'red': '#ff0000',
-    'green': '#008000',
-    'blue': '#0000ff',
-    'yellow': '#ffff00',
-    'orange': '#ffa500',
-    'purple': '#800080',
-    'brown': '#a52a2a',
-    'gray': '#808080',
-    'grey': '#808080',
+    # 18xx-specific (from hex.rb)
+    'pink':         '#ff8ed2',
+    'navy':         '#2443c1',
+    'salmon':       '#e57373',
+    'sepia':        '#6b4b35',
+    # Standard CSS named colors (all lowercase for case-insensitive lookup)
+    'white':        '#ffffff',
+    'black':        '#000000',
+    'red':          '#ff0000',
+    'green':        '#008000',
+    'blue':         '#0000ff',
+    'yellow':       '#ffff00',
+    'orange':       '#ffa500',
+    'purple':       '#800080',
+    'brown':        '#a52a2a',
+    'gray':         '#808080',
+    'grey':         '#808080',
+    'teal':         '#008080',
+    'maroon':       '#800000',
+    'olive':        '#808000',
+    'cyan':         '#00ffff',
+    'magenta':      '#ff00ff',
+    'lime':         '#00ff00',
+    'indigo':       '#4b0082',
+    'violet':       '#ee82ee',
+    'gold':         '#ffd700',
+    'hotpink':      '#ff69b4',
+    'deeppink':     '#ff1493',
+    'lightpink':    '#ffb6c1',
+    'darkgreen':    '#006400',
+    'lightgreen':   '#90ee90',
+    'darkblue':     '#00008b',
+    'lightblue':    '#add8e6',
+    'dodgerblue':   '#1e90ff',
+    'deepskyblue':  '#00bfff',
+    'lightskyblue': '#87cefa',
+    'skyblue':      '#87ceeb',
+    'steelblue':    '#4682b4',
+    'royalblue':    '#4169e1',
+    'midnightblue': '#191970',
+    'darkgray':     '#a9a9a9',
+    'darkgrey':     '#a9a9a9',
+    'lightgray':    '#d3d3d3',
+    'lightgrey':    '#d3d3d3',
+    'dimgray':      '#696969',
+    'dimgrey':      '#696969',
+    'slategray':    '#708090',
+    'darkred':      '#8b0000',
+    'darkmagenta':  '#8b008b',
+    'darkorchid':   '#9932cc',
+    'darkviolet':   '#9400d3',
+    'mediumpurple': '#9370db',
+    'turquoise':    '#40e0d0',
+    'darkturquoise': '#00ced1',
+    'aquamarine':   '#7fffd4',
+    'aqua':         '#00ffff',
+    'coral':        '#ff7f50',
+    'tomato':       '#ff6347',
+    'orangered':    '#ff4500',
+    'darkorange':   '#ff8c00',
+    'peachpuff':    '#ffdab9',
+    'moccasin':     '#ffe4b5',
+    'wheat':        '#f5deb3',
+    'burlywood':    '#deb887',
+    'tan':          '#d2b48c',
+    'sandybrown':   '#f4a460',
+    'peru':         '#cd853f',
+    'saddlebrown':  '#8b4513',
+    'sienna':       '#a0522d',
+    'chocolate':    '#d2691e',
+    'yellowgreen':  '#9acd32',
+    'lawngreen':    '#7cfc00',
+    'limegreen':    '#32cd32',
+    'mediumseagreen': '#3cb371',
+    'seagreen':     '#2e8b57',
+    'forestgreen':  '#228b22',
+    'olivedrab':    '#6b8e23',
+    'antiquewhite': '#faebd7',
+    'linen':        '#faf0e6',
+    'ivory':        '#fffff0',
+    'beige':        '#f5f5dc',
+    'lightyellow':  '#ffffe0',
+    'khaki':        '#f0e68c',
+    'darkkhaki':    '#bdb76b',
+    'plum':         '#dda0dd',
+    'thistle':      '#d8bfd8',
+    'lavender':     '#e6e6fa',
+    'crimson':      '#dc143c',
+    'firebrick':    '#b22222',
+    'indianred':    '#cd5c5c',
+    'rosybrown':    '#bc8f8f',
+    'silver':       '#c0c0c0',
+    # Non-standard names used in the 18xx reference
+    'sand':         '#c2b280',
+    'brightgreen':  '#00cc00',
 }
 
 
@@ -119,8 +204,13 @@ def parse_corporations(entities_content):
                         r"(?<!\w)color:\s*:?['\"]?([#\w][^'\",\n\r]*?)['\"]?\s*(?:,|\n|$)",
                         corp_block
                     )
-                    color = normalize_color(color_m.group(1)) if color_m else None
-                    if not color:
+                    if color_m:
+                        color = normalize_color(color_m.group(1))
+                        if not color:
+                            print(f"    [warn] {sym}: unresolved color {color_m.group(1)!r} — add to NAMED_COLORS; using #808080")
+                            color = '#808080'
+                    else:
+                        # No color field at all — not a playable corporation (e.g. a reservation)
                         i = j + 1
                         break
 
