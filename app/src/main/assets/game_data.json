@@ -2753,11 +2753,6 @@
         "textColor": "#000000"
       },
       {
-        "name": "BAYARD",
-        "color": "#000000",
-        "textColor": "#ffffff"
-      },
-      {
         "name": "AFI",
         "color": "#D1232A",
         "textColor": "#ffffff"
@@ -2825,6 +2820,21 @@
       {
         "name": "SLDV",
         "color": "#000000",
+        "textColor": "#ffffff"
+      },
+      {
+        "name": "SB",
+        "color": "#ffd700",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SFL",
+        "color": "#add8e6",
+        "textColor": "#000000"
+      },
+      {
+        "name": "SFLi",
+        "color": "#a52a2a",
         "textColor": "#ffffff"
       }
     ],

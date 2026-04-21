@@ -314,7 +314,7 @@ def process_game(game_folder):
 GAMES = [
     'g_1804',
     'g_1807',
-    'g_1812',
+    # 'g_1812',
     'g_1817',
     'g_1817_de',
     'g_1817_na',
